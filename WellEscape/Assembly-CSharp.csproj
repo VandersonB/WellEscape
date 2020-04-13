@@ -63,10 +63,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AcoesJogador.cs" />
+    <Compile Include="Assets\Scripts\ControleAudio.cs" />
     <Compile Include="Assets\Scripts\ControleCamera.cs" />
+    <Compile Include="Assets\Scripts\Interface.cs" />
+    <Compile Include="Assets\Scripts\MovimentoJogador.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <None Include="Assets\Sprites\Personagem\license.txt" />
     <None Include="Assets\Sprites\Cenario\Font.txt" />
+    <None Include="Assets\Fonte\Rushink Font Brush DEMO version\Author release_Read me.txt" />
     <None Include="Assets\Sprites\Personagem\Font.txt" />
     <None Include="Assets\Sprites\Cenario\License.txt" />
     <None Include="Assets\Sprites\Cenario\readme.txt" />

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Vanderson(13/04) - código até o momento INATIVO, desmembrado o código entre "AcoesJogador" e "MovimentoJogador"
 //Vanderson(12/04) - alterado ordenamento das variáveis (Serializadas, privadas, publicas) e diferenciado o seu nome, no caso, colocado as públicas em CapsLock para saber a diferenciação.
 public class Player : MonoBehaviour
 {

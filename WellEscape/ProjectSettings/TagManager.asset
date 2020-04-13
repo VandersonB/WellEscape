@@ -8,6 +8,7 @@ TagManager:
   - Inimigo
   - Borda
   - Camera
+  - Carta
   layers:
   - Default
   - TransparentFX
