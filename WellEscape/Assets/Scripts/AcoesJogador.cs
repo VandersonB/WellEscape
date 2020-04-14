@@ -26,8 +26,9 @@ public class AcoesJogador : MonoBehaviour
     private UnityEvent aoPressionarPegar;
     [SerializeField]
     private UnityEvent aoPressionarCancelar;
-
-    private float RaioPulo;        //define o raio de ação do CheckGound do Player para o pulo
+    [SerializeField]
+    private float RaioPulo = 0.1f;        //define o raio de ação do CheckGound do Player para o pulo
+    
     private bool grounded; //variavel de controle do pulo (condição para pular)
     private Rigidbody2D rb2D; //criação de variável de manipulação do rigidbody do player
     private Animator animator; //criação de variavel de manipulaçao do animator
