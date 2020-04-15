@@ -30,23 +30,31 @@ public class Inimigo : ControleInimigos //Classe filha da ControleInimigo (herda
         if(estaMovendo)
         {   
             rb2D.velocity = new Vector2 (velocidade, rb2D.velocity.y);
-            if( Mathf.Abs(distancia)> distanciaAtaque)
-            {
-                animator.SetBool("andando", false );
-                animator.SetBool("correndo", false);    
-            }
-            if( Mathf.Abs(distancia) < distanciaAtaque && Mathf.Abs(distancia) > (distanciaAtaque/2))
-            {
-                animator.SetBool("andando", true );
-                animator.SetBool("correndo", false);    
-            }
-            if(Mathf.Abs(distancia) < (distanciaAtaque/2))
-            {
-                animator.SetBool("andando", false );
-                animator.SetBool("correndo", true);    
-            }
+            
         }
-        
-
+        if( Mathf.Abs(distancia) >= distanciaAtaque)
+        {
+             animator.SetBool("empurrar", false);
+             animator.SetBool("andando", false );
+             animator.SetBool("correndo", false);    
+         }
+        if( Mathf.Abs(distancia) < distanciaAtaque && Mathf.Abs(distancia) >= (distanciaAtaque/2))
+        {
+            animator.SetBool("empurrar", false);
+            animator.SetBool("andando", true );
+            animator.SetBool("correndo", false);    
+        }
+        if(Mathf.Abs(distancia) < (distanciaAtaque/2) && Mathf.Abs(distancia) >= (distanciaAtaque/8))
+        {
+            animator.SetBool("empurrar", false);
+            animator.SetBool("andando", false );
+            animator.SetBool("correndo", true);    
+        }   
+    if(Mathf.Abs(distancia) < (distanciaAtaque/8))
+        {
+            animator.SetBool("andando", false );
+            animator.SetBool("empurrar", true);    
+            animator.SetBool("correndo", false);
+        }
     }
 }
