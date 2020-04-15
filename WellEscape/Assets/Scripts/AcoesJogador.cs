@@ -77,7 +77,6 @@ public class AcoesJogador : MonoBehaviour
         {
             Morrer(morreu);
         }
-
     }
 
     public void Morrer(bool morrer)

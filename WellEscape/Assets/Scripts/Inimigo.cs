@@ -23,7 +23,7 @@ public class Inimigo : ControleInimigos //Classe filha da ControleInimigo (herda
         
         
         }
-        Debug.Log("Distancia = " + distancia);
+        //Debug.Log("Distancia = " + distancia);
         }
     void FixedUpdate() 
     {
