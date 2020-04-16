@@ -12,8 +12,10 @@ public class MovimentoJogador : MonoBehaviour
     private bool eLadoDireito; //parametro para identificar o lado q o player está virado para o pivotamento de sprite
     private Animator animator; //criação de variavel de manipulaçao do animator
     private float horizontal;  //variavel para controlar player 1 Eixo X.
+    public Vector2 posicaoInicial { get; private set; }
     private void Awake()
     {
+        posicaoInicial = this.GetComponent<Transform>().position;
         rb2D = GetComponent<Rigidbody2D>();         //Coleta os componentes do player
         animator = GetComponent<Animator>();        // --    
     }
