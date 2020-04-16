@@ -21,22 +21,33 @@ public class AcoesJogador : MonoBehaviour
     [SerializeField]
     private KeyCode cancelar;
     [SerializeField]
+    private KeyCode abaixar;
+    [SerializeField]
+    private UnityEvent aoPressionarAbaixar;
+    [SerializeField]
     private UnityEvent aoPressionarPulo;
     [SerializeField]
     private UnityEvent aoPressionarPegar;
     [SerializeField]
     private UnityEvent aoPressionarCancelar;
     [SerializeField]
-    private float RaioPulo = 0.1f;        //define o raio de ação do CheckGound do Player para o pulo
-    
+    private float RaioPulo = 0.1f;//define o raio de ação do CheckGound do Player para o pulo
+    [SerializeField]
+    private float velocidadeMorte;//define a velocidade de queda que acarretará na morte do jogador.
+    [SerializeField]
+    private float ajusteDeColisorAgaixado;
+
     private bool grounded; //variavel de controle do pulo (condição para pular)
     private Rigidbody2D rb2D; //criação de variável de manipulação do rigidbody do player
     private Animator animator; //criação de variavel de manipulaçao do animator
-    private float raioDoItem = 0.3f;
+    private float raioDoItem = 1f;
     private GameObject[] item;
     private Interface interfaceJogador;
-    private bool morreu;
     private AudioSource meuAudioSource;
+    private float velocidadeQueda;
+    private bool estaMorto;
+    private Collider2D colisorJogador;
+    private Vector2 colisorJogadorInicial;
 
     private void Awake()
     {
@@ -44,15 +55,17 @@ public class AcoesJogador : MonoBehaviour
         animator = GetComponent<Animator>();        // --
         interfaceJogador = GameObject.FindObjectOfType<Interface>();//puxa o script de interface, para poder mandar o comando de exibir o texto.
         meuAudioSource = this.GetComponent<AudioSource>();
+        colisorJogador = this.GetComponent<Collider2D>();
     }
 
     private void Start()
     {
         item = GameObject.FindGameObjectsWithTag("Carta"); //carrega todos as cartas que estão no jogo.
+        colisorJogadorInicial = colisorJogador.offset;
     }
     void Update()
     {
-       grounded = Physics2D.OverlapCircle(groundCheck.position, RaioPulo, 1 << LayerMask.NameToLayer("Ground"));
+       grounded = Physics2D.OverlapCircle(groundCheck.position, RaioPulo, 1 << LayerMask.NameToLayer("Ground"));     
         if (Input.GetKeyDown(pulo) && grounded)
         {
             aoPressionarPulo.Invoke();
@@ -67,22 +80,42 @@ public class AcoesJogador : MonoBehaviour
         {
             aoPressionarCancelar.Invoke();
         }
+        if(Input.GetKeyDown(abaixar)&& grounded)
+        {
+            Debug.Log("Abaixou");
+            aoPressionarAbaixar.Invoke();
+        }
+
+        if (Input.GetKeyUp(abaixar))
+        {
+            colisorJogador.offset = colisorJogadorInicial;
+        }
         AnimacaoPulo(grounded);
+     
     }
 
     private void FixedUpdate()
     {
         //a morte é definida nas seguintes condições: queda de altura elevada, tiro arremessado
-        if (morreu)
+        if (!grounded)
         {
-            Morrer(morreu);
+            velocidadeQueda = Math.Abs(rb2D.velocity.y);
+            if (velocidadeQueda > velocidadeMorte)
+            {
+                    estaMorto = true;
+                    Morrer(estaMorto);
+            }
+
         }
+        velocidadeQueda = 0;
     }
 
     public void Morrer(bool morrer)
     {
         //executa animação de morrer, que seria o inverso do acordar
         ControleAudio.instancia.PlayOneShot(audioMorte);
+        interfaceJogador.Reiniciar();
+        estaMorto = false;
     }
 
     public void Pulo()//PULO DO PLAYER bool j
@@ -105,6 +138,7 @@ public class AcoesJogador : MonoBehaviour
 
     public void PegarItem()//Aqui o jogador pegará cartas no chão, que contará a história do jogo.
     {
+        Debug.Log("Executou");
         for(int i=0; i<item.Length; i++) //varre toda a lista para ver se tem algum item perto para pegar
         {
             var distancia = Vector2.Distance(this.transform.position, item[i].transform.position);//calcula a distancia do jogador para o item.
@@ -115,6 +149,13 @@ public class AcoesJogador : MonoBehaviour
                 interfaceJogador.MostrarCarta(i);
             }
         }
+    }
+
+    public void Abaixar()
+    {
+        //o código devera reduzir o tamanho do collider e animar a animação de abaixar;
+        colisorJogador.offset = new Vector2(0, ajusteDeColisorAgaixado);
+       
     }
     void OnDrawGizmos()//desenha a esfera de detecção do chão para o pulo, apenas para visualização
     {                                               

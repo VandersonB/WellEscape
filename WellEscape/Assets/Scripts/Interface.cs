@@ -17,6 +17,8 @@ public class Interface : MonoBehaviour
     private Button[] botoes;
     [SerializeField]
     private Text titulo;
+    [SerializeField]
+    private GameObject reiniciar;
 
     private MovimentoJogador movJogador;
     private AcoesJogador acJogador;
@@ -107,12 +109,21 @@ public class Interface : MonoBehaviour
     public void Iniciar()
     {
         movJogador.enabled = true;
+        movJogador.GetComponent<Transform>().position = movJogador.posicaoInicial;
         acJogador.enabled = true;
         for(int i=0; i < botoes.Length; i++)
         {
             botoes[i].gameObject.SetActive(false);
         }
         titulo.gameObject.SetActive(false);
+        reiniciar.SetActive(false);
+    }
+
+    public void Reiniciar()
+    {
+        reiniciar.SetActive(true);
+        acJogador.enabled = false;
+        movJogador.enabled = false;
     }
 
 }
