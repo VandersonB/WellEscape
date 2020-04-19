@@ -9,6 +9,7 @@ TagManager:
   - Borda
   - Camera
   - Carta
+  - Limite
   layers:
   - Default
   - TransparentFX

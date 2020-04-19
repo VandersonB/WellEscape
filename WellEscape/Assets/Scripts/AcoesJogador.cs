@@ -100,6 +100,7 @@ public class AcoesJogador : MonoBehaviour
         if (!grounded)
         {
             velocidadeQueda = Math.Abs(rb2D.velocity.y);
+            Debug.Log("velocidade em y = " + velocidadeQueda);
             if (velocidadeQueda > velocidadeMorte)
             {
                     estaMorto = true;
