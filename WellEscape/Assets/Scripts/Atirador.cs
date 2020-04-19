@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Inimigos : ControleInimigos //Classe filha da ControleInimigo (herda as variaveis)
+public class Atirador : ControleInimigos //Classe filha da ControleInimigo (herda as variaveis)
 {
     void Start() //funcão start da filha (sobreescreve a da mae)
     {
@@ -25,53 +25,30 @@ public class Inimigos : ControleInimigos //Classe filha da ControleInimigo (herd
         
         }
         //Debug.Log("Distancia = " + distancia);
-        }
+    }
     void FixedUpdate() 
     {
         if(estaMovendo && (Mathf.Abs(player.transform.position.y - 
         transform.position.y)) <= distanciaPlataforma)
         {
-            if(Mathf.Abs(distancia) <= distanciaAtaque/2)
+            if( Mathf.Abs(distancia) >= distanciaAtaque)
             {
-                rb2D.velocity = new Vector2 (velocidade*1.5f, rb2D.velocity.y);
-            }   
-            else
+                animator.SetBool("atacando", false);
+                animator.SetBool("construindo", true);    
+            }
+            if( Mathf.Abs(distancia) < distanciaAtaque)
             {
-                rb2D.velocity = new Vector2 (velocidade, rb2D.velocity.y);
-            }    
+                animator.SetBool("atacando", true);
+                animator.SetBool("construindo", false);    
+            } 
         }
-        if( Mathf.Abs(distancia) >= distanciaAtaque || rb2D.velocity.x ==0)
-        {
-             animator.SetBool("empurrar", false);
-             animator.SetBool("andando", false );
-             animator.SetBool("correndo", false);    
-         }
-        if( Mathf.Abs(distancia) < distanciaAtaque && Mathf.Abs(distancia) >= (distanciaAtaque/2) && rb2D.velocity.x !=0)
-        {
-            animator.SetBool("empurrar", false);
-            animator.SetBool("andando", true );
-            animator.SetBool("correndo", false);    
-        }
-        if(Mathf.Abs(distancia) < (distanciaAtaque/2) && Mathf.Abs(distancia) >= (distanciaAtaque/8) && rb2D.velocity.x !=0)
-        {
-            animator.SetBool("empurrar", false);
-            animator.SetBool("andando", false );
-            animator.SetBool("correndo", true);    
-        }   
-    if(Mathf.Abs(distancia) < (distanciaAtaque/8))
-        {
-            animator.SetBool("andando", false );
-            animator.SetBool("empurrar", true);    
-            animator.SetBool("correndo", false);
-        }
-    
-    }
-    void OnCollisionEnter2D(Collision2D collision2D) 
-    {           //Detecta se colidiu
-        Debug.Log("COLIDIU com " + collision2D.gameObject.tag);    
+        void OnCollisionEnter2D(Collision2D collision2D) 
+        {           //Detecta se colidiu
+            Debug.Log("COLIDIU com " + collision2D.gameObject.tag);    
         /*if(collision2D.gameObject.CompareTag("Player"))
         {
             rb2DPlayer.AddForce(new Vector2 (forcaEmpurrao , 0f));
         }*/
+        }
     }
 }

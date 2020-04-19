@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Perseguidor : ControlePerseguidor //Classe filha da ControleInimigo (herda as variaveis)
+public class Perseguidor : ControleInimigos //Classe filha da ControleInimigo (herda as variaveis)
 {
     void Start() //funcão start da filha (sobreescreve a da mae)
     {

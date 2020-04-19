@@ -1,5 +1,20 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5446946697482191961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3165760849443419031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e907f05fea2878647914f709a3185b59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanciaAtaque: 5
+  distanciaPlataforma: 1
+  velocidade: 2
 --- !u!1001 &1298391757519238028
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17,6 +32,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (1) walk fire
       objectReference: {fileID: 0}
+    - target: {fileID: 4173670086522126565, guid: dbdba57d519181642887f444da7f14bc,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e3962c5b56236434991b065ab2e5a338, type: 2}
     - target: {fileID: 4173670086522126566, guid: dbdba57d519181642887f444da7f14bc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -81,3 +101,9 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: -5278236656978606595, guid: dbdba57d519181642887f444da7f14bc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: dbdba57d519181642887f444da7f14bc, type: 3}
+--- !u!1 &3165760849443419031 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4173670086522126363, guid: dbdba57d519181642887f444da7f14bc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1298391757519238028}
+  m_PrefabAsset: {fileID: 0}
