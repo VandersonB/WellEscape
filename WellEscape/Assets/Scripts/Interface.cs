@@ -24,7 +24,7 @@ public class Interface : MonoBehaviour
     private AcoesJogador acJogador;
     private GameObject[] cartas;
     private ControlePause controlePause;
-    // Start is called before the first frame update
+
     void Awake()
     {
         foreach (var textos in textoAmassado)
@@ -33,7 +33,6 @@ public class Interface : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Start()
     {
         movJogador = GameObject.FindObjectOfType<MovimentoJogador>();
@@ -108,22 +107,25 @@ public class Interface : MonoBehaviour
 
     public void Iniciar()
     {
+        titulo.gameObject.SetActive(false);
+        reiniciar.SetActive(false);
         movJogador.enabled = true;
         movJogador.GetComponent<Transform>().position = movJogador.posicaoInicial;
         acJogador.enabled = true;
-        for(int i=0; i < botoes.Length; i++)
+        Time.timeScale = 1;
+        for (int i=0; i < botoes.Length; i++)
         {
             botoes[i].gameObject.SetActive(false);
         }
-        titulo.gameObject.SetActive(false);
-        reiniciar.SetActive(false);
     }
 
     public void Reiniciar()
     {
+        Time.timeScale = 0;
         reiniciar.SetActive(true);
         acJogador.enabled = false;
         movJogador.enabled = false;
+        Debug.Log("executou Reiniciar");
     }
 
 }

@@ -36,6 +36,8 @@ public class AcoesJogador : MonoBehaviour
     private float velocidadeMorte;//define a velocidade de queda que acarretará na morte do jogador.
     [SerializeField]
     private float ajusteDeColisorAgaixado;
+    [SerializeField]
+    private GameObject plataforma;
 
     private bool grounded; //variavel de controle do pulo (condição para pular)
     private Rigidbody2D rb2D; //criação de variável de manipulação do rigidbody do player
@@ -46,7 +48,8 @@ public class AcoesJogador : MonoBehaviour
     private AudioSource meuAudioSource;
     private float velocidadeQueda;
     private bool estaMorto;
-    private Collider2D colisorJogador;
+    private Collider2D colisorPe;
+    private Collider2D colisorAbaixado;
     private Vector2 colisorJogadorInicial;
 
     private void Awake()
@@ -55,13 +58,14 @@ public class AcoesJogador : MonoBehaviour
         animator = GetComponent<Animator>();        // --
         interfaceJogador = GameObject.FindObjectOfType<Interface>();//puxa o script de interface, para poder mandar o comando de exibir o texto.
         meuAudioSource = this.GetComponent<AudioSource>();
-        colisorJogador = this.GetComponent<Collider2D>();
+        colisorPe = this.GetComponent<CapsuleCollider2D>();
+        colisorAbaixado = this.GetComponent<CircleCollider2D>();
     }
 
     private void Start()
     {
         item = GameObject.FindGameObjectsWithTag("Carta"); //carrega todos as cartas que estão no jogo.
-        colisorJogadorInicial = colisorJogador.offset;
+        //colisorJogadorInicial = colisorJogador.offset;
     }
     void Update()
     {
@@ -88,7 +92,9 @@ public class AcoesJogador : MonoBehaviour
 
         if (Input.GetKeyUp(abaixar))
         {
-            colisorJogador.offset = colisorJogadorInicial;
+            //colisorJogador.offset = colisorJogadorInicial;
+            colisorPe.enabled = true;
+            colisorAbaixado.enabled = false;
         }
         AnimacaoPulo(grounded);
      
@@ -96,27 +102,16 @@ public class AcoesJogador : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //a morte é definida nas seguintes condições: queda de altura elevada, tiro arremessado
-        if (!grounded)
-        {
-            velocidadeQueda = Math.Abs(rb2D.velocity.y);
-            Debug.Log("velocidade em y = " + velocidadeQueda);
-            if (velocidadeQueda > velocidadeMorte)
-            {
-                    estaMorto = true;
-                    Morrer(estaMorto);
-            }
-
-        }
-        velocidadeQueda = 0;
+        velocidadeQueda = Math.Abs(rb2D.velocity.y); //caso o jogador caia muito rápido ele morrerá, de acordo com o OnCollisionEnter no fim desse código.
     }
 
     public void Morrer(bool morrer)
     {
         //executa animação de morrer, que seria o inverso do acordar
         ControleAudio.instancia.PlayOneShot(audioMorte);
-        interfaceJogador.Reiniciar();
+        interfaceJogador.Reiniciar();       
         estaMorto = false;
+        Debug.Log("executou Morte");
     }
 
     public void Pulo()//PULO DO PLAYER bool j
@@ -139,7 +134,6 @@ public class AcoesJogador : MonoBehaviour
 
     public void PegarItem()//Aqui o jogador pegará cartas no chão, que contará a história do jogo.
     {
-        Debug.Log("Executou");
         for(int i=0; i<item.Length; i++) //varre toda a lista para ver se tem algum item perto para pegar
         {
             var distancia = Vector2.Distance(this.transform.position, item[i].transform.position);//calcula a distancia do jogador para o item.
@@ -155,11 +149,21 @@ public class AcoesJogador : MonoBehaviour
     public void Abaixar()
     {
         //o código devera reduzir o tamanho do collider e animar a animação de abaixar;
-        colisorJogador.offset = new Vector2(0, ajusteDeColisorAgaixado);
-       
+        colisorAbaixado.enabled = true;
+        colisorPe.enabled = false;       
     }
     void OnDrawGizmos()//desenha a esfera de detecção do chão para o pulo, apenas para visualização
     {                                               
         Gizmos.DrawWireSphere(groundCheck.position, RaioPulo);
     }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (velocidadeQueda > velocidadeMorte && other.gameObject.tag=="Plataforma")
+        {            
+            estaMorto = true;
+            Morrer(estaMorto);
+        }
+    }
+
 }

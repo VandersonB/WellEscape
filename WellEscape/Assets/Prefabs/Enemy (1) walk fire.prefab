@@ -15,6 +15,41 @@ MonoBehaviour:
   distanciaAtaque: 5
   distanciaPlataforma: 1
   velocidade: 2
+  pedraPrefab: {fileID: 4561538479993918468, guid: 9dda4d6ad57c84344a818b80ede77b82,
+    type: 3}
+  arremesso: {fileID: 6425560721616258570}
+  ajusteY: 200
+  ajusteX: 300
+--- !u!1 &3509493969574118167
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6425560721616258570}
+  m_Layer: 0
+  m_Name: pontoDeArremesso (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6425560721616258570
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3509493969574118167}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.102, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3165760849443418986}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1298391757519238028
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40,12 +75,12 @@ PrefabInstance:
     - target: {fileID: 4173670086522126566, guid: dbdba57d519181642887f444da7f14bc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.830387
+      value: 10.21
       objectReference: {fileID: 0}
     - target: {fileID: 4173670086522126566, guid: dbdba57d519181642887f444da7f14bc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 89.12275
+      value: 88.9
       objectReference: {fileID: 0}
     - target: {fileID: 4173670086522126566, guid: dbdba57d519181642887f444da7f14bc,
         type: 3}
@@ -104,6 +139,12 @@ PrefabInstance:
 --- !u!1 &3165760849443419031 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4173670086522126363, guid: dbdba57d519181642887f444da7f14bc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1298391757519238028}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3165760849443418986 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4173670086522126566, guid: dbdba57d519181642887f444da7f14bc,
     type: 3}
   m_PrefabInstance: {fileID: 1298391757519238028}
   m_PrefabAsset: {fileID: 0}

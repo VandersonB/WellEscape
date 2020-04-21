@@ -20,12 +20,10 @@ public class ControleCamera : MonoBehaviour
     {
         alturaDaCamera = Camera.main.orthographicSize; //5
         larguraDaCamera = alturaDaCamera * Camera.main.aspect;
-        Debug.Log(larguraDaCamera);
         Camera.main.transform.position = new Vector3(jogador.position.x, jogador.position.y, Camera.main.transform.position.z);
     }
     void Update()
     {
-        //Se a camera não estiver na borda
         // 15/04 com a elaboração do level design definitivo, a câmera precisou ter um fator de correção no segundo if, visto que ele era sempre verdadeiro. 
         // provavelmente há formas melhores de fazer esse código.
         if (jogador.position.x + larguraDaCamera < limiteCamera.transform.position.x + limiteCamera.GetComponent<BoxCollider2D>().size.x )
