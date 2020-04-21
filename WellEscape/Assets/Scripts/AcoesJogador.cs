@@ -93,8 +93,9 @@ public class AcoesJogador : MonoBehaviour
         if (Input.GetKeyUp(abaixar))
         {
             //colisorJogador.offset = colisorJogadorInicial;
-            colisorPe.enabled = true;
-            colisorAbaixado.enabled = false;
+            //colisorPe.enabled = true;
+            //colisorAbaixado.enabled = false;
+            animator.SetBool("abaixando", false);
         }
         AnimacaoPulo(grounded);
      
@@ -149,8 +150,9 @@ public class AcoesJogador : MonoBehaviour
     public void Abaixar()
     {
         //o código devera reduzir o tamanho do collider e animar a animação de abaixar;
-        colisorAbaixado.enabled = true;
-        colisorPe.enabled = false;       
+        //colisorAbaixado.enabled = true;
+        //colisorPe.enabled = false;
+        animator.SetBool("abaixando", true);    
     }
     void OnDrawGizmos()//desenha a esfera de detecção do chão para o pulo, apenas para visualização
     {                                               

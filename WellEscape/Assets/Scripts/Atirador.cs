@@ -6,10 +6,13 @@ using UnityEngine;
 
 public class Atirador : ControleInimigos //Classe filha da ControleInimigo (herda as variaveis)
 {
+    private Quaternion rotacao;
     [SerializeField]
     private GameObject pedraPrefab;
     [SerializeField]
-    private Transform arremesso;
+    private Transform arremessoR;
+    [SerializeField]
+    private Transform arremessoL;
     [SerializeField]
     private float ajusteY;
     [SerializeField]
@@ -17,7 +20,7 @@ public class Atirador : ControleInimigos //Classe filha da ControleInimigo (herd
 
     private Vector2 lancamento;
     private AcoesJogador acJogador;
-    private bool flipou;
+    public bool flipou;
     private Vector2 posicaoArremesso;
     void Start() //funcão start da filha (sobreescreve a da mae)
     {
@@ -30,14 +33,26 @@ public class Atirador : ControleInimigos //Classe filha da ControleInimigo (herd
         if(estaMovendo && (Mathf.Abs(player.transform.position.y) - 
         Mathf.Abs(transform.position.y)) <= distanciaPlataforma)
         {
+            if(velocidade <= 0)//olhando para esquerda
+                {
+                    posicaoArremesso = arremessoL.position;
+                    rotacao = arremessoL.rotation;
+                }
+                if(velocidade > 0)//olhando para direita
+                {
+                    posicaoArremesso = arremessoR.position;
+                    rotacao = arremessoR.rotation;
+                }
             if ((player.GetComponent<Transform>().position.x > transform.position.x && sprite.flipX) || 
             (player.GetComponent<Transform>().position.x < transform.position.x && !sprite.flipX))
             {
                 Flip();
-                flipou = true;
-            }
+            }    //posicaoArremesso = new Vector3(-arremesso.position.x, arremesso.position.y, arremesso.position.z);
+            Debug.Log("FLIPOU");
+            lancamento = new Vector2(velocidade*ajusteX, ajusteY);//forca corrigida por vel(-+1)
         }
-        flipou = false;
+        
+       
     }
     void FixedUpdate() 
     {
@@ -62,13 +77,7 @@ public class Atirador : ControleInimigos //Classe filha da ControleInimigo (herd
 
     private void AtacarPedra()
     {
-        posicaoArremesso = arremesso.position;
-        if (flipou) //não esta funcionando.
-        {
-            posicaoArremesso = new Vector2(-arremesso.position.x, arremesso.position.y);
-        }
-        lancamento = new Vector2(ajusteX, ajusteY);
-        var obj = GameObject.Instantiate(pedraPrefab, posicaoArremesso, arremesso.rotation); //cria a pedra que esta sendo arremessada;
+        var obj = GameObject.Instantiate(pedraPrefab, posicaoArremesso, rotacao); //cria a pedra que esta sendo arremessada;
         obj.GetComponent<Pedra>().AcoesJogador = acJogador; //endereça o script "AcoesJogador" para a pedra para o caso dela acionar o metodo Morrer do jogador, caso ela acerte.
         obj.GetComponent<Rigidbody2D>().AddForceAtPosition(lancamento, posicaoArremesso, ForceMode2D.Force);
     }

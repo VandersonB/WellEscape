@@ -9,35 +9,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5446946697482191961, guid: 781d23bbaebac4d41963d8f544df8ed9,
         type: 3}
-      propertyPath: pedraPrefab
-      value: 
-      objectReference: {fileID: 4561538479993918468, guid: 9dda4d6ad57c84344a818b80ede77b82,
-        type: 3}
-    - target: {fileID: -5446946697482191961, guid: 781d23bbaebac4d41963d8f544df8ed9,
-        type: 3}
-      propertyPath: arremesso
-      value: 
-      objectReference: {fileID: 3701160541082847975}
-    - target: {fileID: -5446946697482191961, guid: 781d23bbaebac4d41963d8f544df8ed9,
-        type: 3}
-      propertyPath: ajusteY
+      propertyPath: ajusteX
       value: 200
       objectReference: {fileID: 0}
-    - target: {fileID: -5446946697482191961, guid: 781d23bbaebac4d41963d8f544df8ed9,
-        type: 3}
-      propertyPath: ajusteX
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: -5446946697482191961, guid: 781d23bbaebac4d41963d8f544df8ed9,
-        type: 3}
-      propertyPath: tempoEntrePedra
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3165760849443418985, guid: 781d23bbaebac4d41963d8f544df8ed9,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: e3962c5b56236434991b065ab2e5a338, type: 2}
     - target: {fileID: 3165760849443418986, guid: 781d23bbaebac4d41963d8f544df8ed9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -98,16 +72,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (2) craft fire
       objectReference: {fileID: 0}
-    - target: {fileID: 6425560721616258570, guid: 781d23bbaebac4d41963d8f544df8ed9,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 781d23bbaebac4d41963d8f544df8ed9, type: 3}
---- !u!4 &3701160541082847975 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6425560721616258570, guid: 781d23bbaebac4d41963d8f544df8ed9,
-    type: 3}
-  m_PrefabInstance: {fileID: 7669916629753154797}
-  m_PrefabAsset: {fileID: 0}

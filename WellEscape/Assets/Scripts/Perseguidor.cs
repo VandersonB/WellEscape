@@ -5,9 +5,12 @@ using UnityEngine;
 
 public class Perseguidor : ControleInimigos //Classe filha da ControleInimigo (herda as variaveis)
 {
+    private AcoesJogador acoesJogador;
+    private bool atingiujogador = false;
+
     void Start() //funcão start da filha (sobreescreve a da mae)
     {
-
+        acoesJogador= GameObject.FindObjectOfType<AcoesJogador>();
     }
     void Update() //função update da filha (sobreescreve a da mae)
     {
@@ -66,12 +69,15 @@ public class Perseguidor : ControleInimigos //Classe filha da ControleInimigo (h
         }
     
     }
-    void OnCollisionEnter2D(Collision2D collision2D) 
-    {           //Detecta se colidiu
-        Debug.Log("COLIDIU com " + collision2D.gameObject.tag);    
-        /*if(collision2D.gameObject.CompareTag("Player"))
+    
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        var obj = collision;
+        if (obj.gameObject.tag == "Player")// se a bala colide com o jogador ele deverá morrer;
         {
-            rb2DPlayer.AddForce(new Vector2 (forcaEmpurrao , 0f));
-        }*/
+            atingiujogador = true;
+            acoesJogador.Morrer(atingiujogador);
+        }
     }
+    
 }

@@ -20,7 +20,7 @@ public class ControleCamera : MonoBehaviour
     {
         alturaDaCamera = Camera.main.orthographicSize; //5
         larguraDaCamera = alturaDaCamera * Camera.main.aspect;
-        Camera.main.transform.position = new Vector3(jogador.position.x, jogador.position.y, Camera.main.transform.position.z);
+        Camera.main.transform.position = new Vector3(jogador.localPosition.x, jogador.localPosition.y, Camera.main.transform.position.z);
     }
     void Update()
     {
@@ -41,11 +41,11 @@ public class ControleCamera : MonoBehaviour
 
     private void SeguirJogadorHorizontal()
     {
-        Camera.main.transform.position = new Vector3(jogador.position.x, Camera.main.transform.position.y, Camera.main.transform.position.z);
+        Camera.main.transform.position = new Vector3(jogador.localPosition.x, Camera.main.transform.position.y, Camera.main.transform.position.z);
     }
     private void SeguirJogadorVertical()
     {
-        Camera.main.transform.position = new Vector3(Camera.main.transform.position.x, jogador.position.y, Camera.main.transform.position.z);
+        Camera.main.transform.position = new Vector3(Camera.main.transform.position.x, jogador.localPosition.y, Camera.main.transform.position.z);
     }
   
 }
