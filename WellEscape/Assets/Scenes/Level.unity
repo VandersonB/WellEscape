@@ -156,22 +156,22 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1529370186}
     m_Modifications:
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.36
+      value: 11.880498
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 45.53
+      value: 50.40905
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 7.899659
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
@@ -196,7 +196,7 @@ PrefabInstance:
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
@@ -220,6 +220,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ff447f33c6b9414a956cd72eb12f0c8, type: 3}
+--- !u!4 &57963349 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1398262867}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &81980784
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,6 +300,86 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 81980784}
+  m_CullTransparentMesh: 0
+--- !u!1 &91204242
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 91204243}
+  - component: {fileID: 91204245}
+  - component: {fileID: 91204244}
+  m_Layer: 5
+  m_Name: MensagemAlexander
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &91204243
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91204242}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &91204244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91204242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Ah...que sede! Nesse lugar \xFAmido at\xE9 encontro \xE1gua, mas que se
+    dane! Saudade de beber a verdadeira bebida que mata minha sede.... Ainda que
+    eu encontre algo em um rato aqui outro ali, nada se compara a das mulheres que
+    conquistei!"
+--- !u!222 &91204245
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91204242}
   m_CullTransparentMesh: 0
 --- !u!4 &105976161 stripped
 Transform:
@@ -594,6 +680,36 @@ RectTransform:
   - {fileID: 291807414}
   - {fileID: 1059311720}
   - {fileID: 766135477}
+  - {fileID: 472569409}
+  - {fileID: 910330499}
+  - {fileID: 1317623164}
+  - {fileID: 1192869981}
+  - {fileID: 669725180}
+  - {fileID: 611972618}
+  - {fileID: 1948257148}
+  - {fileID: 91204243}
+  - {fileID: 966840591}
+  - {fileID: 957926474}
+  - {fileID: 2084472631}
+  - {fileID: 165808610}
+  - {fileID: 953949155}
+  - {fileID: 1885336873}
+  - {fileID: 811837120}
+  - {fileID: 299434939}
+  - {fileID: 2118582289}
+  - {fileID: 1794970852}
+  - {fileID: 1036956025}
+  - {fileID: 492094632}
+  - {fileID: 124938442}
+  - {fileID: 2102874705}
+  - {fileID: 1203385179}
+  - {fileID: 681890063}
+  - {fileID: 290558486}
+  - {fileID: 856917441}
+  - {fileID: 1381941998}
+  - {fileID: 966824731}
+  - {fileID: 1037041027}
+  - {fileID: 294476378}
   m_Father: {fileID: 1459477299}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -643,22 +759,22 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1529370186}
     m_Modifications:
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.497635
+      value: 10.018133
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.4284546
+      value: 3.450598
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 7.899659
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
@@ -683,7 +799,7 @@ PrefabInstance:
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
@@ -707,6 +823,164 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ff447f33c6b9414a956cd72eb12f0c8, type: 3}
+--- !u!1 &124938441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 124938442}
+  - component: {fileID: 124938444}
+  - component: {fileID: 124938443}
+  m_Layer: 5
+  m_Name: MensagemDiretor6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &124938442
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124938441}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &124938443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124938441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Hoje observei a Jennifer conversando com um de seus pacientes. N\xE3o
+    gosto disso, \xE9 importante manter dist\xE2ncia sobre eles, mas ela \xE9 teimosa.
+    Vou ficar de olho especialmente no Uaine, com quem ela tem conversado mais."
+--- !u!222 &124938444
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124938441}
+  m_CullTransparentMesh: 0
+--- !u!1 &165808609
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 165808610}
+  - component: {fileID: 165808612}
+  - component: {fileID: 165808611}
+  m_Layer: 5
+  m_Name: MensagemEnfermeiro21
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &165808610
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165808609}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &165808611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165808609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Hoje terminei o \u201Celevador\u201D...o Dr\xBA gostou, disse que ser\xE1
+    bem \xFAtil para ele. Tentei entender o motivo, mas ele foi bem evasivo...ele
+    nunca foi de falar muito..."
+--- !u!222 &165808612
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165808609}
+  m_CullTransparentMesh: 0
 --- !u!1001 &177588563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -757,7 +1031,7 @@ PrefabInstance:
     - target: {fileID: 4173670086522126566, guid: dbdba57d519181642887f444da7f14bc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4173670086522126566, guid: dbdba57d519181642887f444da7f14bc,
         type: 3}
@@ -832,7 +1106,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f92f7210c9363184ab7918f08fce36bb, type: 3}
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 1
@@ -979,7 +1253,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &218843881
 MonoBehaviour:
@@ -1063,8 +1337,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3, y: 74}
-  m_SizeDelta: {x: 194, y: 57}
+  m_AnchoredPosition: {x: 3.4199982, y: 81.59}
+  m_SizeDelta: {x: 208.33, y: 72.18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &276639795
 MonoBehaviour:
@@ -1085,7 +1359,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f92f7210c9363184ab7918f08fce36bb, type: 3}
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
     m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
@@ -1106,6 +1380,87 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 276639793}
   m_CullTransparentMesh: 0
+--- !u!1 &290558485
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 290558486}
+  - component: {fileID: 290558488}
+  - component: {fileID: 290558487}
+  m_Layer: 5
+  m_Name: MensagemJennifer7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &290558486
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290558485}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.26000977, y: 0}
+  m_SizeDelta: {x: 64.65, y: 69.97}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &290558487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290558485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Pai...n\xE3o sei o que dizer...tudo deu t\xE3o errado. Parece que Uaine
+    sabia de tudo, n\xE3o sei como! Assim como n\xE3o sei como ele est\xE1 com um
+    machado! Estou desesperada, pai! Queria dizer tanta coisa, mas n\xE3o sei como
+    as coisas ir\xE3o terminar, ficarei escondida aqui at\xE9 que voc\xEA me encontre!
+    Te amo!\nJennifer."
+--- !u!222 &290558488
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290558485}
+  m_CullTransparentMesh: 0
 --- !u!1 &291807413
 GameObject:
   m_ObjectHideFlags: 0
@@ -1118,12 +1473,12 @@ GameObject:
   - component: {fileID: 291807415}
   - component: {fileID: 291807416}
   m_Layer: 5
-  m_Name: MensagemI4
+  m_Name: MensagemEnfermeiro1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &291807414
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1140,8 +1495,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 18.770004}
-  m_SizeDelta: {x: 60, y: -9.28}
+  m_AnchoredPosition: {x: 0, y: 0.48284912}
+  m_SizeDelta: {x: 60, y: 73.537}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &291807415
 CanvasRenderer:
@@ -1170,10 +1525,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f92f7210c9363184ab7918f08fce36bb, type: 3}
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -1182,9 +1537,177 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '
-
-    O.G Walson'
+  m_Text: "Alexander sumiu...ningu\xE9m sabe onde ele foi, depois de deixarmos com
+    o diretor na sala de medicamentos. Tudo bem que ele sempre deu trabalho, mas
+    o que ser\xE1 que o Dr\xBA Banner fez com ele?"
+--- !u!1 &294476377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 294476378}
+  - component: {fileID: 294476379}
+  - component: {fileID: 294476380}
+  m_Layer: 5
+  m_Name: ProntuarioIverson
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &294476378
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294476377}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &294476379
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294476377}
+  m_CullTransparentMesh: 0
+--- !u!114 &294476380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294476377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Nome: Tim Iverson\nIdade: 51 anos\nOrigem: Marshfield (Wisconsin)\n\nDiagn\xF3stico:
+    Esquizofrenia e Transtorno bipolar \n\nCaracter\xEDsticas: t\xEDmido, disperso,
+    humor oscilante Obs.: condenado ap\xF3s assassinar 34 pessoas. A \xFAltima foi
+    encontrada em condi\xE7\xF5es desumanas, aparentemente sendo tratada como cachorro,
+    como se fosse animal de estima\xE7\xE3o de Tim."
+--- !u!1 &299434938
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 299434939}
+  - component: {fileID: 299434941}
+  - component: {fileID: 299434940}
+  m_Layer: 5
+  m_Name: MensagemJennifer3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &299434939
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299434938}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &299434940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299434938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Ah, que saco! Eu sei que estou no caminho certo, o lobo temporal \xE9
+    a chave para o que estou procurando, s\xF3 preciso insistir mais e acertar alguns
+    par\xE2metros, tenho certeza. Entretanto, precisarei pedir mais alguns pacientes
+    para meu pai...ah e pedir para troca o enfermeiro, acho que o Gardner n\xE3o
+    me entende..."
+--- !u!222 &299434941
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299434938}
+  m_CullTransparentMesh: 0
+--- !u!4 &324589215 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1656001142}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &332529444
 GameObject:
   m_ObjectHideFlags: 0
@@ -1307,22 +1830,22 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1529370186}
     m_Modifications:
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 29.55
+      value: 27.070498
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 64.53
+      value: 69.40905
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 7.899659
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
@@ -1347,7 +1870,7 @@ PrefabInstance:
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
@@ -1399,8 +1922,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &392135965 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1772592248}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &463755529
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1446,7 +1975,7 @@ PrefabInstance:
     - target: {fileID: 3165760849443418986, guid: 781d23bbaebac4d41963d8f544df8ed9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3165760849443418986, guid: 781d23bbaebac4d41963d8f544df8ed9,
         type: 3}
@@ -1543,6 +2072,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 467115730}
   m_CullTransparentMesh: 0
+--- !u!1 &472569408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 472569409}
+  - component: {fileID: 472569411}
+  - component: {fileID: 472569410}
+  m_Layer: 5
+  m_Name: MensagemEnfermeiro14
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &472569409
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472569408}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &472569410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472569408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 11
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Merda...mais uma noite sem dormir. J\xE1 foram 10 sess\xF5es com a Dr\xAA
+    Banks. Os gritos de todos os pacientes ecoam em minha cabe\xE7a e ainda vejo
+    seu sangue mesmo tendo trocado o uniforme. Deus, n\xE3o me deixe enlouquecer."
+--- !u!222 &472569411
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472569408}
+  m_CullTransparentMesh: 0
 --- !u!1001 &477208164
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1610,8 +2218,92 @@ PrefabInstance:
       propertyPath: m_Name
       value: paper (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4071737800240998069, guid: 78302672ea9222b47a363926f8f85451,
+        type: 3}
+      propertyPath: numeroCarta
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78302672ea9222b47a363926f8f85451, type: 3}
+--- !u!1 &492094631
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 492094632}
+  - component: {fileID: 492094634}
+  - component: {fileID: 492094633}
+  m_Layer: 5
+  m_Name: MensagemJennifer5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &492094632
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492094631}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &492094633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492094631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Conversei novamente com o Uaine, \xE9 um cara bastante simp\xE1tico. Sei
+    que n\xE3o deveria, mas acabei contando a ele um pouco sobre minha pesquisa,
+    omitindo os detalhes do experimento, obviamente."
+--- !u!222 &492094634
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492094631}
+  m_CullTransparentMesh: 0
 --- !u!1 &493298715
 GameObject:
   m_ObjectHideFlags: 0
@@ -1734,7 +2426,7 @@ PrefabInstance:
     - target: {fileID: 3929250726700826296, guid: 78302672ea9222b47a363926f8f85451,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3929250726700826296, guid: 78302672ea9222b47a363926f8f85451,
         type: 3}
@@ -1755,6 +2447,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: paper (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071737800240998069, guid: 78302672ea9222b47a363926f8f85451,
+        type: 3}
+      propertyPath: numeroCarta
+      value: 35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78302672ea9222b47a363926f8f85451, type: 3}
@@ -1855,7 +2552,7 @@ Transform:
   m_LocalScale: {x: -1.8450125, y: 1.2308102, z: 0.17079}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519500747
 GameObject:
@@ -1937,37 +2634,37 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1529370186}
     m_Modifications:
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 27.963173
+      value: 25.483671
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 97.51
+      value: 102.38905
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 7.899659
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
@@ -1977,7 +2674,7 @@ PrefabInstance:
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
@@ -2046,7 +2743,7 @@ PrefabInstance:
     - target: {fileID: 3929250726700826296, guid: 78302672ea9222b47a363926f8f85451,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3929250726700826296, guid: 78302672ea9222b47a363926f8f85451,
         type: 3}
@@ -2063,20 +2760,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3929250726700826296, guid: 78302672ea9222b47a363926f8f85451,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 3929250726700826296, guid: 78302672ea9222b47a363926f8f85451,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.03
-      objectReference: {fileID: 0}
     - target: {fileID: 3929250726700826302, guid: 78302672ea9222b47a363926f8f85451,
         type: 3}
       propertyPath: m_Name
       value: paper
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071737800240998069, guid: 78302672ea9222b47a363926f8f85451,
+        type: 3}
+      propertyPath: numeroCarta
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78302672ea9222b47a363926f8f85451, type: 3}
@@ -2136,7 +2828,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f92f7210c9363184ab7918f08fce36bb, type: 3}
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 1
@@ -2234,6 +2926,91 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 607919664}
   m_CullTransparentMesh: 0
+--- !u!1 &611972617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 611972618}
+  - component: {fileID: 611972620}
+  - component: {fileID: 611972619}
+  m_Layer: 5
+  m_Name: MensagemStevenson
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &611972618
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611972617}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &611972619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611972617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Por que fogem de mim? Quero que expliquem onde est\xE1 minha irm\xE3!
+    Eu sei que ela est\xE1 viva! Maldito dia que sumiram com ela depois que eu dei
+    um suco para ela...me digam onde ela est\xE1!!! "
+--- !u!222 &611972620
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611972617}
+  m_CullTransparentMesh: 0
+--- !u!4 &648673833 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1674357982}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &657628936
 GameObject:
   m_ObjectHideFlags: 0
@@ -2246,12 +3023,12 @@ GameObject:
   - component: {fileID: 657628938}
   - component: {fileID: 657628939}
   m_Layer: 5
-  m_Name: Mensagem1
+  m_Name: MensagemPrisioneiro1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &657628937
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2268,8 +3045,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 18.770004}
-  m_SizeDelta: {x: 60, y: -9.28}
+  m_AnchoredPosition: {x: 0, y: -2.1900024}
+  m_SizeDelta: {x: 60, y: 64.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &657628938
 CanvasRenderer:
@@ -2298,11 +3075,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f92f7210c9363184ab7918f08fce36bb, type: 3}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 12
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
+    m_BestFit: 1
+    m_MinSize: 12
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -2310,7 +3087,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Teste 1
+  m_Text: "Muitos dizem ser poss\xEDvel escalar esse lugar, eu j\xE1 n\xE3o tenho
+    tanta certeza disso. Ainda que as tochas iluminem, fico na d\xFAvida se isso
+    aqui \xE9 um po\xE7o ou um abismo."
 --- !u!1001 &659103052
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2378,29 +3157,200 @@ PrefabInstance:
       propertyPath: m_Name
       value: paper (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4071737800240998069, guid: 78302672ea9222b47a363926f8f85451,
+        type: 3}
+      propertyPath: numeroCarta
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78302672ea9222b47a363926f8f85451, type: 3}
+--- !u!1 &669725179
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 669725180}
+  - component: {fileID: 669725182}
+  - component: {fileID: 669725181}
+  m_Layer: 5
+  m_Name: ProntuarioStevenson
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &669725180
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669725179}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &669725181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669725179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Nome: Douglas Stevenson\nIdade: 47 anos \nOrigem: Great Falls(Montana)\n\nDiagn\xF3stico:
+    Esquizofrenia\n\nCaracter\xEDsticas: agressivo, mania de perseguir quem ele considera
+    uma amea\xE7a, perigoso no trato social, Obs.: alega possuir uma irm\xE3, que
+    faleceu ainda quando eram crian\xE7as por envenenamento."
+--- !u!222 &669725182
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669725179}
+  m_CullTransparentMesh: 0
+--- !u!4 &674352348 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 124502224}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &681890062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 681890063}
+  - component: {fileID: 681890065}
+  - component: {fileID: 681890064}
+  m_Layer: 5
+  m_Name: MensagemEnfermeiro15
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &681890063
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681890062}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &681890064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681890062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Durante minha rotina, acabei conversando com John. Normalmente falamos
+    de futebol e contamos piada, mas ele percebeu que ando estranho, veja s\xF3 rs.
+    Desabafei e contei tudo sobre a filha do diretor para ele...pedi para guardar
+    segredo e ele disse que posso contar com ele...assim espero. "
+--- !u!222 &681890065
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681890062}
+  m_CullTransparentMesh: 0
 --- !u!1001 &727474144
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1529370186}
     m_Modifications:
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 26.718708
+      value: 24.239206
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 27.591768
+      value: 32.47082
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 7.899659
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
@@ -2425,7 +3375,7 @@ PrefabInstance:
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
@@ -2454,22 +3404,22 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1529370186}
     m_Modifications:
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.643112
+      value: 9.16361
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 45.53095
+      value: 50.41
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 7.899659
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
@@ -2494,7 +3444,7 @@ PrefabInstance:
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
@@ -3343,12 +4293,12 @@ GameObject:
   - component: {fileID: 766135478}
   - component: {fileID: 766135479}
   m_Layer: 5
-  m_Name: Mensagem6
+  m_Name: MensagemEnfermeiro13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &766135477
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3365,8 +4315,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 18.770004}
-  m_SizeDelta: {x: 60, y: -9.28}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &766135478
 CanvasRenderer:
@@ -3395,11 +4345,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f92f7210c9363184ab7918f08fce36bb, type: 3}
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
+    m_BestFit: 1
+    m_MinSize: 11
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -3407,7 +4357,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: teste 6
+  m_Text: "A filha do diretor n\xE3o tem um pingo de humanidade! Tudo o que tive
+    que fazer enquanto ela fazia seus experimentos foram de um terror que jamais
+    pude imaginar. Mesmo tendo ouvido falar, n\xE3o podia estar menos preparado para
+    isso...."
 --- !u!1 &775735413
 GameObject:
   m_ObjectHideFlags: 0
@@ -3465,6 +4418,86 @@ Transform:
   m_Father: {fileID: 1529370186}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &811837119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 811837120}
+  - component: {fileID: 811837122}
+  - component: {fileID: 811837121}
+  m_Layer: 5
+  m_Name: MensagemJennifer2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &811837120
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811837119}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &811837121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811837119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Infelizmente as coisas iniciaram como imaginei...A come\xE7ar o enfermeiro
+    que papai me forneceu, bunda mole! Parece que nunca viu sangue, ou que acha que
+    estamos em uma casa de repouso...Bom amanh\xE3 \xE9 um novo dia, e ainda tenho
+    pacientes para examinar..."
+--- !u!222 &811837122
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811837119}
+  m_CullTransparentMesh: 0
 --- !u!1001 &832855916
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3515,7 +4548,7 @@ PrefabInstance:
     - target: {fileID: 4173670086522126566, guid: dbdba57d519181642887f444da7f14bc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4173670086522126566, guid: dbdba57d519181642887f444da7f14bc,
         type: 3}
@@ -3539,37 +4572,37 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1529370186}
     m_Modifications:
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.290106
+      value: 17.810604
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 81.554474
+      value: 86.433525
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 7.899659
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
@@ -3579,7 +4612,7 @@ PrefabInstance:
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
@@ -3680,6 +4713,166 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853165923}
   m_CullTransparentMesh: 0
+--- !u!1 &856917440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 856917441}
+  - component: {fileID: 856917443}
+  - component: {fileID: 856917442}
+  m_Layer: 5
+  m_Name: MensagemDiretor7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &856917441
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856917440}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &856917442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856917440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Ainda n\xE3o acredito...filha! Tantos alertas que te dei! Nem sei por
+    que deixei que ficasse aqui nesse lugar...\xE9 tudo culpa minha... Uaine maldito!
+    Eu deveria pegar o machado que usou e cort\xE1-lo da mesma forma...mas farei
+    pior, ir\xE1 desejar usar o machado em si mesmo."
+--- !u!222 &856917443
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856917440}
+  m_CullTransparentMesh: 0
+--- !u!1 &910330498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 910330499}
+  - component: {fileID: 910330501}
+  - component: {fileID: 910330500}
+  m_Layer: 5
+  m_Name: MensagemPrisioneiro13
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &910330499
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910330498}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &910330500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910330498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Bem que aquele bilhete mencionou sobre a possibilidade de subir essa merda...sinto
+    que progredi bastante e as paredes j\xE1 est\xE3o mais claras, talvez haja uma
+    sa\xEDda! O estranho \xE9 que estou ouvindo vozes, talvez haja mais algu\xE9m
+    aqui."
+--- !u!222 &910330501
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910330498}
+  m_CullTransparentMesh: 0
 --- !u!1 &950661499
 GameObject:
   m_ObjectHideFlags: 0
@@ -3730,6 +4923,329 @@ Transform:
   m_Father: {fileID: 1529370186}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &953949154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 953949155}
+  - component: {fileID: 953949157}
+  - component: {fileID: 953949156}
+  m_Layer: 5
+  m_Name: MensagemDiretor4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &953949155
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953949154}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &953949156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953949154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Jennifer decidiu que ir\xE1 iniciar uma nova pesquisa na cl\xEDnica...me
+    perguntou se eu tinha alguns nomes para recomendar...Lembrei do Rogers, daquela
+    mulher de cabelo curto, Wyllis acho, e do McDonald...devem servir como um in\xEDcio..."
+--- !u!222 &953949157
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953949154}
+  m_CullTransparentMesh: 0
+--- !u!1 &957926473
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 957926474}
+  - component: {fileID: 957926476}
+  - component: {fileID: 957926475}
+  m_Layer: 5
+  m_Name: MensagemPrisioneiroCobaia
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &957926474
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957926473}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &957926475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957926473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "A dr\xAA Banks veio falar comigo...disse que quer minha ajuda sobre uma
+    pesquisa dela...logo aquela gostosa, demor\xF4. De repente me ajuda a sair daqui
+    antes do tempo. Acho que ela percebeu que n\xE3o sou louco e que n\xE3o tive
+    escolha, era isso ou a pris\xE3o."
+--- !u!222 &957926476
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957926473}
+  m_CullTransparentMesh: 0
+--- !u!1 &966824730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 966824731}
+  - component: {fileID: 966824733}
+  - component: {fileID: 966824732}
+  m_Layer: 5
+  m_Name: MensagemPrisioneiro4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &966824731
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966824730}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &966824732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966824730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Filho, papai est\xE1 com frio demais para brincar hoje com voc\xEA...me
+    deixa quieto aqui, vai...ok, pega a sua luva de baseball, vou arremessar algumas
+    bolas para voc\xEA, mas n\xE3o por muito tempo, ok?"
+--- !u!222 &966824733
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966824730}
+  m_CullTransparentMesh: 0
+--- !u!1 &966840590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 966840591}
+  - component: {fileID: 966840593}
+  - component: {fileID: 966840592}
+  m_Layer: 5
+  m_Name: MensagemPrisioneiro2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &966840591
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966840590}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &966840592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966840590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Gosto muito daqui, sabe amor...eles me alimentam, jogamos conversa fora.
+    Jennifer \xE9 um doce com todos n\xF3s...t\xE3o linda, incr\xEDvel como Dr\xBA
+    Banks p\xF4de ter uma filha t\xE3o bonita, deve ter puxado a m\xE3e;"
+--- !u!222 &966840593
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966840590}
+  m_CullTransparentMesh: 0
+--- !u!4 &998086570 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 563070523}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1008637350
 GameObject:
   m_ObjectHideFlags: 0
@@ -3807,6 +5323,165 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008637350}
   m_CullTransparentMesh: 0
+--- !u!1 &1036956024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1036956025}
+  - component: {fileID: 1036956027}
+  - component: {fileID: 1036956026}
+  m_Layer: 5
+  m_Name: ProntuarioUaine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1036956025
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036956024}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1036956026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036956024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Nome: John Uaine\nIdade: 43 anos\nOrigem: Sheridan (Wyoming) \n\nDiagn\xF3stico:
+    Psicopatia e perda seletiva de mem\xF3ria\n\nCaracter\xEDsticas: frio, calculista,
+    quieto e de conversa f\xE1cil. Condenado por assassinato, por\xE9m sem ter encontrado
+    o corpo da v\xEDtima e alega n\xE3o se recordar de nada."
+--- !u!222 &1036956027
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036956024}
+  m_CullTransparentMesh: 0
+--- !u!1 &1037041026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1037041027}
+  - component: {fileID: 1037041028}
+  - component: {fileID: 1037041029}
+  m_Layer: 5
+  m_Name: MensagemPrisioneiro5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1037041027
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037041026}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 34
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1037041028
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037041026}
+  m_CullTransparentMesh: 0
+--- !u!114 &1037041029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037041026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Saudade de voc\xEA, grande amigo!!! De aliment\xE1-lo, dar banho, e de
+    nossos grandes momentos! De vez em quando ainda arremesso uns gravetos s\xF3
+    para ver se voc\xEA ir\xE1 traz\xEA-los de volta..."
 --- !u!1 &1059311719
 GameObject:
   m_ObjectHideFlags: 0
@@ -3819,12 +5494,12 @@ GameObject:
   - component: {fileID: 1059311721}
   - component: {fileID: 1059311722}
   m_Layer: 5
-  m_Name: Mensagem5
+  m_Name: MensagemEnfermerio12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1059311720
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3841,8 +5516,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 18.770004}
-  m_SizeDelta: {x: 60, y: -9.28}
+  m_AnchoredPosition: {x: 0, y: -2.1900024}
+  m_SizeDelta: {x: 60, y: 64.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1059311721
 CanvasRenderer:
@@ -3871,10 +5546,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f92f7210c9363184ab7918f08fce36bb, type: 3}
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -3883,15 +5558,194 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'teste5
-
-'
+  m_Text: "Hoje o Dr\xBA pediu para eu acompanhar sua filha em um experimento. N\xE3o
+    entendi direito a ideia, mas me pediram para acorrentar o Popov na maca que fica
+    no setor cir\xFArgico, espero que ela n\xE3o pe\xE7a para eu acompanhar todo
+    o processo..."
 --- !u!4 &1073567177 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3929250726700826296, guid: 78302672ea9222b47a363926f8f85451,
     type: 3}
   m_PrefabInstance: {fileID: 516525659}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1108007745 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 731866694}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1119149860 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 314190891794637030}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1192869980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1192869981}
+  - component: {fileID: 1192869983}
+  - component: {fileID: 1192869982}
+  m_Layer: 5
+  m_Name: MensagemDiretor3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1192869981
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192869980}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1192869982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192869980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "J\xE1 n\xE3o aguento mais o Stevenson, sua esquizofrenia s\xF3 piora e
+    ele tem se tornado cada dia mais agressivo...pensando bem, considerando que \xE9
+    um indigente, talvez o po\xE7o nos fundos po\xE7a ser um local interessante para
+    seu tratamento..."
+--- !u!222 &1192869983
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192869980}
+  m_CullTransparentMesh: 0
+--- !u!4 &1196303109 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 852135451}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1203385178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1203385179}
+  - component: {fileID: 1203385181}
+  - component: {fileID: 1203385180}
+  m_Layer: 5
+  m_Name: MensagemJennifer6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1203385179
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203385178}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.6000061, y: -0.9299927}
+  m_SizeDelta: {x: 62.1, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1203385180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203385178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Amanh\xE3 realizarei o experimento no Uaine. Sinto que eu n\xE3o deveria,
+    ele \xE9 um bom sujeito, nem sei se deveria estar aqui de fato. Por\xE9m, eu
+    n\xE3o devo pensar nisso, ainda que eu n\xE3o tenha um bom pressentimento, eu
+    preciso concluir a minha pesquisa...seja o que Deus quiser."
+--- !u!222 &1203385181
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203385178}
+  m_CullTransparentMesh: 0
 --- !u!1 &1238314171
 GameObject:
   m_ObjectHideFlags: 0
@@ -3971,6 +5825,85 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1238314171}
+  m_CullTransparentMesh: 0
+--- !u!1 &1317623163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1317623164}
+  - component: {fileID: 1317623166}
+  - component: {fileID: 1317623165}
+  m_Layer: 5
+  m_Name: MensagemDiretor2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1317623164
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317623163}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1317623165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317623163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Ah...me sinto t\xE3o cansado desse lugar, 30 anos ouvindo esses loucos...Bom
+    que minha filha est\xE1 aprendendo r\xE1pido e que goste da \xE1rea, com sua
+    curiosidade, tenho certeza que far\xE1 grandes progressos.\u2026"
+--- !u!222 &1317623166
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317623163}
   m_CullTransparentMesh: 0
 --- !u!1 &1336692581
 GameObject:
@@ -4058,7 +5991,6 @@ GameObject:
   - component: {fileID: 1358094477}
   - component: {fileID: 1358094476}
   - component: {fileID: 1358094478}
-  - component: {fileID: 1358094481}
   - component: {fileID: 1358094473}
   - component: {fileID: 1358094480}
   - component: {fileID: 1358094479}
@@ -4147,13 +6079,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1358094472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.27, y: 88.84, z: 0}
+  m_LocalPosition: {x: 10.09, y: -1.63, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children:
   - {fileID: 3050900}
   - {fileID: 258849127}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1358094476
 Rigidbody2D:
@@ -4392,22 +6324,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 8
---- !u!58 &1358094481
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1358094472}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1}
-  serializedVersion: 2
-  m_Radius: 0.07
 --- !u!1 &1370197347
 GameObject:
   m_ObjectHideFlags: 0
@@ -4485,27 +6401,106 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1370197347}
   m_CullTransparentMesh: 0
+--- !u!1 &1381941997
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1381941998}
+  - component: {fileID: 1381942000}
+  - component: {fileID: 1381941999}
+  m_Layer: 5
+  m_Name: MensagemPrisioneiro3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1381941998
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381941997}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1381941999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381941997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Estou t\xE3o cansado desse lugar, maldito Banks! N\xE3o bastasse a fome,
+    frio e escurid\xE3o, ainda escuto gritos de outros desgra\xE7ados, isso quando
+    n\xE3o ficam jogando pedras..."
+--- !u!222 &1381942000
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381941997}
+  m_CullTransparentMesh: 0
 --- !u!1001 &1398262867
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1529370186}
     m_Modifications:
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.1243267
+      value: -0.35517526
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.5373635
+      value: 9.416416
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 7.899659
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
@@ -4530,7 +6525,7 @@ PrefabInstance:
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
@@ -4618,7 +6613,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1459477295
 GameObject:
@@ -4720,7 +6715,7 @@ RectTransform:
   - {fileID: 519500750}
   - {fileID: 81980785}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4746,6 +6741,36 @@ MonoBehaviour:
   - {fileID: 291807416}
   - {fileID: 1059311722}
   - {fileID: 766135479}
+  - {fileID: 472569410}
+  - {fileID: 910330500}
+  - {fileID: 1317623165}
+  - {fileID: 1192869982}
+  - {fileID: 669725181}
+  - {fileID: 611972619}
+  - {fileID: 1948257149}
+  - {fileID: 91204244}
+  - {fileID: 966840592}
+  - {fileID: 957926475}
+  - {fileID: 2084472632}
+  - {fileID: 165808611}
+  - {fileID: 953949156}
+  - {fileID: 1885336874}
+  - {fileID: 811837121}
+  - {fileID: 299434940}
+  - {fileID: 2118582290}
+  - {fileID: 1794970853}
+  - {fileID: 1036956026}
+  - {fileID: 492094633}
+  - {fileID: 124938443}
+  - {fileID: 2102874706}
+  - {fileID: 1203385180}
+  - {fileID: 681890064}
+  - {fileID: 290558487}
+  - {fileID: 856917442}
+  - {fileID: 1381941999}
+  - {fileID: 966824732}
+  - {fileID: 1037041029}
+  - {fileID: 294476380}
   papelAmassado: {fileID: 116508154}
   textoCreditos:
   - {fileID: 588265199}
@@ -4784,12 +6809,12 @@ GameObject:
   - component: {fileID: 1493728507}
   - component: {fileID: 1493728508}
   m_Layer: 5
-  m_Name: Mensagem2
+  m_Name: MensagemPrisioneiro12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1493728506
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4806,8 +6831,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 18.770004}
-  m_SizeDelta: {x: 60, y: -9.28}
+  m_AnchoredPosition: {x: 0, y: -0.7200012}
+  m_SizeDelta: {x: 60, y: 69.32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1493728507
 CanvasRenderer:
@@ -4836,10 +6861,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f92f7210c9363184ab7918f08fce36bb, type: 3}
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -4848,9 +6873,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'teste 2
-
-'
+  m_Text: "Daqui tudo parece terrivelmente alto, preciso tomar cuidado para n\xE3o
+    cair. Pela altura, qualquer salto mal planejado pode ser fatal."
 --- !u!1 &1529370185
 GameObject:
   m_ObjectHideFlags: 0
@@ -4880,9 +6904,28 @@ Transform:
   m_Children:
   - {fileID: 950661501}
   - {fileID: 775735415}
+  - {fileID: 648673833}
+  - {fileID: 324589215}
+  - {fileID: 998086570}
+  - {fileID: 392135965}
+  - {fileID: 1196303109}
+  - {fileID: 1119149860}
+  - {fileID: 674352348}
+  - {fileID: 57963349}
+  - {fileID: 2103360244}
+  - {fileID: 1902558465}
+  - {fileID: 1108007745}
+  - {fileID: 1879472195}
+  - {fileID: 1580688877}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1580688877 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 334907737}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1593471393
 GameObject:
   m_ObjectHideFlags: 0
@@ -4939,7 +6982,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f92f7210c9363184ab7918f08fce36bb, type: 3}
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 1
@@ -5216,7 +7259,7 @@ PrefabInstance:
     - target: {fileID: 4173670086522126566, guid: dbdba57d519181642887f444da7f14bc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4173670086522126566, guid: dbdba57d519181642887f444da7f14bc,
         type: 3}
@@ -5240,37 +7283,106 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1529370186}
     m_Modifications:
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.423515
+      value: 25.944014
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 121.55
+      value: 126.429054
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 7.899659
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 314190891888697391, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
+        type: 3}
+      propertyPath: m_Name
+      value: torch2_3 (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6ff447f33c6b9414a956cd72eb12f0c8, type: 3}
+--- !u!1001 &1674357982
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1529370186}
+    m_Modifications:
+    - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.2182703
+      objectReference: {fileID: 0}
+    - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 121.41905
+      objectReference: {fileID: 0}
+    - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.899659
+      objectReference: {fileID: 0}
+    - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
@@ -5300,75 +7412,6 @@ PrefabInstance:
     - target: {fileID: 314190891888697391, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_Name
-      value: torch2_3 (8)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ff447f33c6b9414a956cd72eb12f0c8, type: 3}
---- !u!1001 &1674357982
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 9.697772
-      objectReference: {fileID: 0}
-    - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 116.54
-      objectReference: {fileID: 0}
-    - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 314190891888697391, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
-        type: 3}
-      propertyPath: m_Name
       value: torch2_3 (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5378,22 +7421,22 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1529370186}
     m_Modifications:
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.045683
+      value: 25.566181
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.54
+      value: 23.419054
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 7.899659
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
@@ -5418,7 +7461,7 @@ PrefabInstance:
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
@@ -31306,37 +33349,37 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1529370186}
     m_Modifications:
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.3835096
+      value: 0.9040077
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 94.55
+      value: 99.429054
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 7.899659
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
@@ -31346,7 +33389,7 @@ PrefabInstance:
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
@@ -31370,6 +33413,85 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ff447f33c6b9414a956cd72eb12f0c8, type: 3}
+--- !u!1 &1794970851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1794970852}
+  - component: {fileID: 1794970854}
+  - component: {fileID: 1794970853}
+  m_Layer: 5
+  m_Name: MensagemJennifer4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1794970852
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794970851}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1794970853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794970851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Hoje tive conversei com alguns pacientes que papai me forneceu, gosto
+    de conhec\xEA-los antes de iniciar os procedimentos. Achei bastante curioso o
+    Uaine, n\xE3o encontrei seu prontu\xE1rio, mas em nada se assemelha com psicopatia...interessante."
+--- !u!222 &1794970854
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794970851}
+  m_CullTransparentMesh: 0
 --- !u!4 &1795054054 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3929250726700826296, guid: 78302672ea9222b47a363926f8f85451,
@@ -35074,6 +37196,178 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!4 &1879472195 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 54593635}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1885336872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1885336873}
+  - component: {fileID: 1885336875}
+  - component: {fileID: 1885336874}
+  m_Layer: 5
+  m_Name: MensagemJennifer1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1885336873
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885336872}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1885336874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885336872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Come\xE7arei com a minha pesquisa! Com as novas inser\xE7\xF5es cerebrais
+    poderei encontrar a raiz da esquizofrenia e da psicopatia! Papai foi um anjo
+    em me ceder alguns pacientes, lembro de alguns quando era ainda pequena! Estou
+    ansiosa para come\xE7ar!"
+--- !u!222 &1885336875
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885336872}
+  m_CullTransparentMesh: 0
+--- !u!4 &1902558465 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 727474144}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1948257147
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1948257148}
+  - component: {fileID: 1948257150}
+  - component: {fileID: 1948257149}
+  m_Layer: 5
+  m_Name: ProntuarioAlexander
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1948257148
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948257147}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1948257149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948257147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Nome: Adrian Alexander\nIdade: 34 anos\nOrigem: Sheridan (Wyoming) \n\nDiagn\xF3stico:
+    Psicopatia e S\xEDndrome de Reinfield \n\nCaracter\xEDsticas: inquieto, olhar
+    vazio, sede constante de sangue, Obs.: encaminhado ap\xF3s decreto da justi\xE7a
+    como parte da condena\xE7\xE3o por ter matado 9 mulheres."
+--- !u!222 &1948257150
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948257147}
+  m_CullTransparentMesh: 0
 --- !u!1 &1954373149
 GameObject:
   m_ObjectHideFlags: 0
@@ -35130,7 +37424,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f92f7210c9363184ab7918f08fce36bb, type: 3}
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 1
@@ -35328,13 +37622,13 @@ Transform:
   m_LocalPosition: {x: 13.9, y: 24.5, z: -1.2173796}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
-  - {fileID: 1795054054}
   - {fileID: 1073567177}
+  - {fileID: 1795054054}
   - {fileID: 2008156004}
   - {fileID: 252556774}
   - {fileID: 105976161}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2008156004 stripped
 Transform:
@@ -35354,12 +37648,12 @@ GameObject:
   - component: {fileID: 2027094804}
   - component: {fileID: 2027094803}
   m_Layer: 5
-  m_Name: MensagemInicial
+  m_Name: MensagemDiretor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2027094802
 RectTransform:
   m_ObjectHideFlags: 0
@@ -35376,8 +37670,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 18.770004}
-  m_SizeDelta: {x: 60, y: -9.28}
+  m_AnchoredPosition: {x: 0, y: -1.4100037}
+  m_SizeDelta: {x: 60, y: 70.28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2027094803
 MonoBehaviour:
@@ -35398,22 +37692,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f92f7210c9363184ab7918f08fce36bb, type: 3}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 12
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_BestFit: 1
+    m_MinSize: 12
+    m_MaxSize: 81
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'son of a bitch, I really hope I''ll die little by little
-
-
-    O.G Walson'
+  m_Text: "A insanidade \xE9 apenas a entrada para o inferno, que voc\xEA apodre\xE7a
+    nele... aos poucos, maldito. \n\nO.G Walson"
 --- !u!222 &2027094804
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -35456,8 +37748,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3, y: 74}
-  m_SizeDelta: {x: 194, y: 57}
+  m_AnchoredPosition: {x: 3, y: 81.17}
+  m_SizeDelta: {x: 194, y: 71.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2034438379
 MonoBehaviour:
@@ -35478,7 +37770,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f92f7210c9363184ab7918f08fce36bb, type: 3}
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
     m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
@@ -35551,7 +37843,7 @@ PrefabInstance:
     - target: {fileID: 4728232264946007943, guid: ec2ba2f6c4a36d54aa6f0ae215182685,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4728232264946007943, guid: ec2ba2f6c4a36d54aa6f0ae215182685,
         type: 3}
@@ -35570,36 +37862,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec2ba2f6c4a36d54aa6f0ae215182685, type: 3}
---- !u!1 &2037460593
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2037460594}
-  m_Layer: 0
-  m_Name: Diretor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2037460594
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2037460593}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.9314032, y: -2.077099, z: 84.88495}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 26
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2055106592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35650,7 +37912,7 @@ PrefabInstance:
     - target: {fileID: 4173670086522126566, guid: dbdba57d519181642887f444da7f14bc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4173670086522126566, guid: dbdba57d519181642887f444da7f14bc,
         type: 3}
@@ -35725,7 +37987,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f92f7210c9363184ab7918f08fce36bb, type: 3}
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 1
@@ -35746,27 +38008,273 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070663855}
   m_CullTransparentMesh: 0
+--- !u!1 &2084472630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2084472631}
+  - component: {fileID: 2084472633}
+  - component: {fileID: 2084472632}
+  m_Layer: 5
+  m_Name: MensagemEnfermeiro2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2084472631
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084472630}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2084472632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084472630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Dr\xBA Banks me pediu um aparato diferente hoje...disse que queria come\xE7ar
+    a despachar alguns \u201Cdescart\xE1veis\u201D no po\xE7o e, por isso, pediu
+    para construir uma esp\xE9cie de elevador...parece que pretende operar sozinho,
+    n\xE3o sei..ele n\xE3o quis dar grandes detalhes..."
+--- !u!222 &2084472633
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084472630}
+  m_CullTransparentMesh: 0
+--- !u!1 &2102874704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2102874705}
+  - component: {fileID: 2102874707}
+  - component: {fileID: 2102874706}
+  m_Layer: 5
+  m_Name: MensagemInspetor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2102874705
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102874704}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2102874706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102874704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Estranho, fazendo o invent\xE1rio da cl\xEDnica vi que est\xE1 faltando
+    um machado da carpinagem. Revirei todo o lugar, mas n\xE3o achei. Engra\xE7ado
+    que ontem, quando os pacientes foram realizar o cultivo semana, ela estava por
+    l\xE1...vou procurar mais um pouco antes de contar sobre isso ao Dr Banks."
+--- !u!222 &2102874707
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102874704}
+  m_CullTransparentMesh: 0
+--- !u!4 &2103360244 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1683543319}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2118582288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2118582289}
+  - component: {fileID: 2118582291}
+  - component: {fileID: 2118582290}
+  m_Layer: 5
+  m_Name: MensagemDiretor5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2118582289
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118582288}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.57068, y: 0.57068, z: 0.57068}
+  m_Children: []
+  m_Father: {fileID: 116508153}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.9299927}
+  m_SizeDelta: {x: 60, y: 68.58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2118582290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118582288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 521aa6a1a201d1242bf1cc3836f111b0, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Jennifer parece bastante impaciente, certamente puxou sua m\xE3e. Me pediu
+    mais pacientes, parece que o desvio padr\xE3o est\xE1 alto demais e precisa reduzir
+    a margem de erro...passei uma lista com outros 10, vamos ver se agora encontra
+    os dados que precisa."
+--- !u!222 &2118582291
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118582288}
+  m_CullTransparentMesh: 0
 --- !u!1001 &314190891794637030
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1529370186}
     m_Modifications:
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.41
+      value: 4.930498
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.44
+      value: 3.4390526
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 7.899659
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
@@ -35791,7 +38299,7 @@ PrefabInstance:
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 314190891888697389, guid: 6ff447f33c6b9414a956cd72eb12f0c8,
         type: 3}
@@ -35896,6 +38404,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: paper
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071737800240998069, guid: 78302672ea9222b47a363926f8f85451,
+        type: 3}
+      propertyPath: numeroCarta
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78302672ea9222b47a363926f8f85451, type: 3}

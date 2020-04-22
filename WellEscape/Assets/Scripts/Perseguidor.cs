@@ -23,12 +23,9 @@ public class Perseguidor : ControleInimigos //Classe filha da ControleInimigo (h
             (player.position.x < transform.position.x && !sprite.flipX))
             {
                 Flip();
-            }
-        
-        
+            }       
         }
-        //Debug.Log("Distancia = " + distancia);
-        }
+    }
     void FixedUpdate() 
     {
         if(estaMovendo && (Mathf.Abs(player.transform.position.y - 
@@ -66,8 +63,7 @@ public class Perseguidor : ControleInimigos //Classe filha da ControleInimigo (h
             animator.SetBool("andando", false );
             animator.SetBool("empurrar", true);    
             animator.SetBool("correndo", false);
-        }
-    
+        }   
     }
     
     public void OnCollisionEnter2D(Collision2D collision)

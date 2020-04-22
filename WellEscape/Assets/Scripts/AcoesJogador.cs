@@ -43,14 +43,14 @@ public class AcoesJogador : MonoBehaviour
     private Rigidbody2D rb2D; //criação de variável de manipulação do rigidbody do player
     private Animator animator; //criação de variavel de manipulaçao do animator
     private float raioDoItem = 1f;
-    private GameObject[] item;
+    private Carta[] carta;
     private Interface interfaceJogador;
     private AudioSource meuAudioSource;
     private float velocidadeQueda;
     private bool estaMorto;
     private Collider2D colisorPe;
-    private Collider2D colisorAbaixado;
     private Vector2 colisorJogadorInicial;
+    private int numeroCarta;
 
     private void Awake()
     {
@@ -59,13 +59,11 @@ public class AcoesJogador : MonoBehaviour
         interfaceJogador = GameObject.FindObjectOfType<Interface>();//puxa o script de interface, para poder mandar o comando de exibir o texto.
         meuAudioSource = this.GetComponent<AudioSource>();
         colisorPe = this.GetComponent<CapsuleCollider2D>();
-        colisorAbaixado = this.GetComponent<CircleCollider2D>();
     }
 
     private void Start()
     {
-        item = GameObject.FindGameObjectsWithTag("Carta"); //carrega todos as cartas que estão no jogo.
-        //colisorJogadorInicial = colisorJogador.offset;
+        carta = GameObject.FindObjectsOfType<Carta>(); //carrega todos as cartas que estão no jogo.
     }
     void Update()
     {
@@ -86,19 +84,14 @@ public class AcoesJogador : MonoBehaviour
         }
         if(Input.GetKeyDown(abaixar)&& grounded)
         {
-            Debug.Log("Abaixou");
             aoPressionarAbaixar.Invoke();
         }
 
         if (Input.GetKeyUp(abaixar))
         {
-            //colisorJogador.offset = colisorJogadorInicial;
-            //colisorPe.enabled = true;
-            //colisorAbaixado.enabled = false;
             animator.SetBool("abaixando", false);
         }
-        AnimacaoPulo(grounded);
-     
+        AnimacaoPulo(grounded);     
     }
 
     private void FixedUpdate()
@@ -135,23 +128,22 @@ public class AcoesJogador : MonoBehaviour
 
     public void PegarItem()//Aqui o jogador pegará cartas no chão, que contará a história do jogo.
     {
-        for(int i=0; i<item.Length; i++) //varre toda a lista para ver se tem algum item perto para pegar
+        for(int i=0; i<carta.Length; i++) //varre toda a lista para ver se tem algum item perto para pegar
         {
-            var distancia = Vector2.Distance(this.transform.position, item[i].transform.position);//calcula a distancia do jogador para o item.
+            var distancia = Vector2.Distance(this.transform.position, carta[i].transform.position);//calcula a distancia do jogador para o item.
             if (distancia < raioDoItem)//se estiver próximo o suficiente.
             {
                 //desativa a carta que foi coletada, mas a mantém na lista (não consegui encontrar uma forma de remover sem dar erro no próximo item.
-                item[i].SetActive(false);
-                interfaceJogador.MostrarCarta(i);
+                carta[i].gameObject.SetActive(false);
+                numeroCarta=carta[i].NumeroCarta();//pega o numero da carta, setado pelo level designer ao longo da fase.
+                interfaceJogador.MostrarCarta(numeroCarta);//manda para interface qual texto deverá ser ativo.
             }
         }
     }
 
     public void Abaixar()
     {
-        //o código devera reduzir o tamanho do collider e animar a animação de abaixar;
-        //colisorAbaixado.enabled = true;
-        //colisorPe.enabled = false;
+        //quem faz a ação de abaixar é a animação, mudando inclusive o collider.;
         animator.SetBool("abaixando", true);    
     }
     void OnDrawGizmos()//desenha a esfera de detecção do chão para o pulo, apenas para visualização
