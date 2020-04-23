@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3929250726700826296}
   - component: {fileID: 3929250726700826303}
+  - component: {fileID: 1485697111}
   m_Layer: 0
   m_Name: paper
   m_TagString: Carta
@@ -26,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 3929250726700826302}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.71, y: -0.55, z: 0}
-  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.06}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -81,3 +82,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1485697111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3929250726700826302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d515fac1baaa9714a83583b8da34e25d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numeroCarta: 0

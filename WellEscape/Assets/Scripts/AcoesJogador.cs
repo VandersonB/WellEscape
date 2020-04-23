@@ -43,7 +43,7 @@ public class AcoesJogador : MonoBehaviour
     private Rigidbody2D rb2D; //criação de variável de manipulação do rigidbody do player
     private Animator animator; //criação de variavel de manipulaçao do animator
     private float raioDoItem = 1f;
-    private GameObject[] item;
+    private Carta[] item;
     private Interface interfaceJogador;
     private AudioSource meuAudioSource;
     private float velocidadeQueda;
@@ -51,6 +51,7 @@ public class AcoesJogador : MonoBehaviour
     private Collider2D colisorPe;
     private Collider2D colisorAbaixado;
     private Vector2 colisorJogadorInicial;
+    private int numeroCarta;
 
     private void Awake()
     {
@@ -64,7 +65,7 @@ public class AcoesJogador : MonoBehaviour
 
     private void Start()
     {
-        item = GameObject.FindGameObjectsWithTag("Carta"); //carrega todos as cartas que estão no jogo.
+        item = GameObject.FindObjectsOfType<Carta>(); //carrega todos as cartas que estão no jogo.
         //colisorJogadorInicial = colisorJogador.offset;
     }
     void Update()
@@ -141,8 +142,9 @@ public class AcoesJogador : MonoBehaviour
             if (distancia < raioDoItem)//se estiver próximo o suficiente.
             {
                 //desativa a carta que foi coletada, mas a mantém na lista (não consegui encontrar uma forma de remover sem dar erro no próximo item.
-                item[i].SetActive(false);
-                interfaceJogador.MostrarCarta(i);
+                item[i].gameObject.SetActive(false);
+                numeroCarta = item[i].NumeroCarta();
+                interfaceJogador.MostrarCarta(numeroCarta);
             }
         }
     }
