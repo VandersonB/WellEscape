@@ -61,13 +61,16 @@ public class Atirador : ControleInimigos //Classe filha da ControleInimigo (herd
             if( Mathf.Abs(distancia) >= distanciaAtaque)
             {
                 animator.SetBool("atacando", false);
-                animator.SetBool("construindo", true);
             }
             if( Mathf.Abs(distancia) < distanciaAtaque)
             {
                 animator.SetBool("atacando", true);
-                animator.SetBool("construindo", false);
             }
+        }
+
+        else
+        {
+            animator.SetBool("atacando", false);
         }
     }
 

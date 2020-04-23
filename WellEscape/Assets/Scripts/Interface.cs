@@ -19,12 +19,13 @@ public class Interface : MonoBehaviour
     private Text titulo;
     [SerializeField]
     private GameObject reiniciar;
+    [SerializeField]
+    private Checkpoint checkpoint;
 
     private MovimentoJogador movJogador;
     private AcoesJogador acJogador;
     private GameObject[] cartas;
-    private ControlePause controlePause;
-    private Checkpoint[] checkpoints;
+    private ControlePause controlePause;   
     private bool passouPeloCheckpoint;
     private Vector2 novaPosicaoInicial;
     void Awake()
@@ -33,6 +34,7 @@ public class Interface : MonoBehaviour
         {
             textos.gameObject.SetActive(false);
         }
+        passouPeloCheckpoint = false;
     }
 
     void Start()
@@ -40,9 +42,13 @@ public class Interface : MonoBehaviour
         movJogador = GameObject.FindObjectOfType<MovimentoJogador>();
         acJogador = GameObject.FindObjectOfType<AcoesJogador>();
         controlePause = GameObject.FindObjectOfType<ControlePause>();
-        checkpoints = GameObject.FindObjectsOfType<Checkpoint>();
+        
     }
 
+    private void Update()
+    {
+        passouPeloCheckpoint = checkpoint.PassouPeloCheck();
+    }
     public void MostrarCarta(int i)
     {
         textoAmassado[i].gameObject.SetActive(true);
@@ -113,19 +119,15 @@ public class Interface : MonoBehaviour
         titulo.gameObject.SetActive(false);
         reiniciar.SetActive(false);
         movJogador.enabled = true;
-        //provavelmente, não precisaria desse laço.
-        for(int i=0; i<checkpoints.Length;i++)//verifica se algum checkpoint foi ativado
+            
+        if (passouPeloCheckpoint)
         {
-            passouPeloCheckpoint = checkpoints[i].PassouPeloCheck();
-            if (passouPeloCheckpoint)
-            {
-                //posiciona o jogador no local do checkpoint. Caso ele retorne no jogo e passe por outro checkpoint, esse será seu novo local de nascer;
-                movJogador.GetComponent<Transform>().position = novaPosicaoInicial;
-            }
+            //posiciona o jogador no local do checkpoint. Caso ele retorne no jogo e passe por outro checkpoint, esse será seu novo local de nascer;
+            movJogador.GetComponent<Transform>().position = novaPosicaoInicial;
+        }
             else 
-            {
+        {
                 movJogador.GetComponent<Transform>().position = movJogador.posicaoInicial;//ele não passou em nenhum checkpoint, retorna ao inicio
-            }            
         }
         acJogador.enabled = true;
         Time.timeScale = 1;
