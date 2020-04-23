@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\AcoesJogador.cs" />
     <Compile Include="Assets\Scripts\Atirador.cs" />
     <Compile Include="Assets\Scripts\Carta.cs" />
+    <Compile Include="Assets\Scripts\Checkpoint.cs" />
     <Compile Include="Assets\Scripts\ControleAudio.cs" />
     <Compile Include="Assets\Scripts\ControleCamera.cs" />
     <Compile Include="Assets\Scripts\ControleInimigos.cs" />

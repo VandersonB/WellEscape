@@ -24,7 +24,9 @@ public class Interface : MonoBehaviour
     private AcoesJogador acJogador;
     private GameObject[] cartas;
     private ControlePause controlePause;
-
+    private Checkpoint[] checkpoints;
+    private bool passouPeloCheckpoint;
+    private Vector2 novaPosicaoInicial;
     void Awake()
     {
         foreach (var textos in textoAmassado)
@@ -38,6 +40,7 @@ public class Interface : MonoBehaviour
         movJogador = GameObject.FindObjectOfType<MovimentoJogador>();
         acJogador = GameObject.FindObjectOfType<AcoesJogador>();
         controlePause = GameObject.FindObjectOfType<ControlePause>();
+        checkpoints = GameObject.FindObjectsOfType<Checkpoint>();
     }
 
     public void MostrarCarta(int i)
@@ -110,7 +113,20 @@ public class Interface : MonoBehaviour
         titulo.gameObject.SetActive(false);
         reiniciar.SetActive(false);
         movJogador.enabled = true;
-        movJogador.GetComponent<Transform>().position = movJogador.posicaoInicial;
+        //provavelmente, não precisaria desse laço.
+        for(int i=0; i<checkpoints.Length;i++)//verifica se algum checkpoint foi ativado
+        {
+            passouPeloCheckpoint = checkpoints[i].PassouPeloCheck();
+            if (passouPeloCheckpoint)
+            {
+                //posiciona o jogador no local do checkpoint. Caso ele retorne no jogo e passe por outro checkpoint, esse será seu novo local de nascer;
+                movJogador.GetComponent<Transform>().position = novaPosicaoInicial;
+            }
+            else 
+            {
+                movJogador.GetComponent<Transform>().position = movJogador.posicaoInicial;//ele não passou em nenhum checkpoint, retorna ao inicio
+            }            
+        }
         acJogador.enabled = true;
         Time.timeScale = 1;
         for (int i=0; i < botoes.Length; i++)
@@ -119,6 +135,10 @@ public class Interface : MonoBehaviour
         }
     }
 
+    public void AtualizaPosicao(Vector2 posicao)
+    {
+        novaPosicaoInicial = posicao;
+    }
     public void Reiniciar()
     {
         Time.timeScale = 0;

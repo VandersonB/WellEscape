@@ -22,7 +22,7 @@ public class ControleCamera : MonoBehaviour
         larguraDaCamera = alturaDaCamera * Camera.main.aspect;
         Camera.main.transform.position = new Vector3(jogador.localPosition.x, jogador.localPosition.y, Camera.main.transform.position.z);
     }
-    void Update()
+    void FixedUpdate()
     {
         // 15/04 com a elaboração do level design definitivo, a câmera precisou ter um fator de correção no segundo if, visto que ele era sempre verdadeiro. 
         // provavelmente há formas melhores de fazer esse código.
