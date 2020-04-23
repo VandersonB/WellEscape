@@ -13,6 +13,7 @@ public class ControleCamera : MonoBehaviour
 
     private float alturaDaCamera;
     private float larguraDaCamera;
+    private Vector2 posicaoLimiteInicial;
 
     public float fatorDeCorrecao = 28f;
 
@@ -21,6 +22,7 @@ public class ControleCamera : MonoBehaviour
         alturaDaCamera = Camera.main.orthographicSize; //5
         larguraDaCamera = alturaDaCamera * Camera.main.aspect;
         Camera.main.transform.position = new Vector3(jogador.localPosition.x, jogador.localPosition.y, Camera.main.transform.position.z);
+        posicaoLimiteInicial = limiteCamera.GetComponent<Transform>().position;
     }
     void FixedUpdate()
     {
@@ -36,7 +38,17 @@ public class ControleCamera : MonoBehaviour
             if (jogador.position.y + alturaDaCamera > limiteCamera.transform.position.y + limiteCamera.GetComponent<BoxCollider2D>().size.y / 2)
             {
                 SeguirJogadorVertical();
-            }        
+            }
+
+        if (jogador.position.y > 286f && jogador.position.x>25f) //posição do jogador na última plataforma.
+        {
+            limiteCamera.GetComponent<Transform>().position = new Vector2(70f, limiteCamera.GetComponent<Transform>().position.y);
+        }
+
+        else
+        {
+            limiteCamera.GetComponent<Transform>().position = new Vector2(posicaoLimiteInicial.x,posicaoLimiteInicial.y);
+        }
     }
 
     private void SeguirJogadorHorizontal()
