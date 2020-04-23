@@ -125,7 +125,6 @@ public class Interface : MonoBehaviour
         reiniciar.SetActive(true);
         acJogador.enabled = false;
         movJogador.enabled = false;
-        Debug.Log("executou Reiniciar");
     }
 
 }

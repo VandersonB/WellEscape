@@ -49,8 +49,6 @@ public class AcoesJogador : MonoBehaviour
     private float velocidadeQueda;
     private bool estaMorto;
     private Collider2D colisorPe;
-    private Collider2D colisorAbaixado;
-    private Vector2 colisorJogadorInicial;
     private int numeroCarta;
 
     private void Awake()
@@ -60,13 +58,11 @@ public class AcoesJogador : MonoBehaviour
         interfaceJogador = GameObject.FindObjectOfType<Interface>();//puxa o script de interface, para poder mandar o comando de exibir o texto.
         meuAudioSource = this.GetComponent<AudioSource>();
         colisorPe = this.GetComponent<CapsuleCollider2D>();
-        colisorAbaixado = this.GetComponent<CircleCollider2D>();
     }
 
     private void Start()
     {
         item = GameObject.FindObjectsOfType<Carta>(); //carrega todos as cartas que estão no jogo.
-        //colisorJogadorInicial = colisorJogador.offset;
     }
     void Update()
     {
@@ -87,15 +83,11 @@ public class AcoesJogador : MonoBehaviour
         }
         if(Input.GetKeyDown(abaixar)&& grounded)
         {
-            Debug.Log("Abaixou");
             aoPressionarAbaixar.Invoke();
         }
 
         if (Input.GetKeyUp(abaixar))
         {
-            //colisorJogador.offset = colisorJogadorInicial;
-            //colisorPe.enabled = true;
-            //colisorAbaixado.enabled = false;
             animator.SetBool("abaixando", false);
         }
         AnimacaoPulo(grounded);
@@ -113,7 +105,6 @@ public class AcoesJogador : MonoBehaviour
         ControleAudio.instancia.PlayOneShot(audioMorte);
         interfaceJogador.Reiniciar();       
         estaMorto = false;
-        Debug.Log("executou Morte");
     }
 
     public void Pulo()//PULO DO PLAYER bool j
@@ -151,9 +142,6 @@ public class AcoesJogador : MonoBehaviour
 
     public void Abaixar()
     {
-        //o código devera reduzir o tamanho do collider e animar a animação de abaixar;
-        //colisorAbaixado.enabled = true;
-        //colisorPe.enabled = false;
         animator.SetBool("abaixando", true);    
     }
     void OnDrawGizmos()//desenha a esfera de detecção do chão para o pulo, apenas para visualização
