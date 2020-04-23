@@ -47,7 +47,8 @@ public class Atirador : ControleInimigos //Classe filha da ControleInimigo (herd
             (player.GetComponent<Transform>().position.x < transform.position.x && !sprite.flipX))
             {
                 Flip();
-            } 
+            }    //posicaoArremesso = new Vector3(-arremesso.position.x, arremesso.position.y, arremesso.position.z);
+            Debug.Log("FLIPOU");
             lancamento = new Vector2(velocidade*ajusteX, ajusteY);//forca corrigida por vel(-+1)
         }
         
@@ -58,13 +59,16 @@ public class Atirador : ControleInimigos //Classe filha da ControleInimigo (herd
         if((Mathf.Abs(player.transform.position.y - 
         transform.position.y)) <= distanciaPlataforma)
         {
+            Debug.Log("Executou ataque");
             if( Mathf.Abs(distancia) >= distanciaAtaque)
             {
                 animator.SetBool("atacando", false);
                 animator.SetBool("construindo", true);
+                Debug.Log("Cancelou ataque");
             }
             if( Mathf.Abs(distancia) < distanciaAtaque)
             {
+                Debug.Log("Iniciou Ataque");
                 animator.SetBool("atacando", true);
                 animator.SetBool("construindo", false);
             }

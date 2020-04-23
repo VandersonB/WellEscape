@@ -65,7 +65,6 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\AcoesJogador.cs" />
     <Compile Include="Assets\Scripts\Atirador.cs" />
-    <Compile Include="Assets\Scripts\Carta.cs" />
     <Compile Include="Assets\Scripts\ControleAudio.cs" />
     <Compile Include="Assets\Scripts\ControleCamera.cs" />
     <Compile Include="Assets\Scripts\ControleInimigos.cs" />
@@ -76,7 +75,6 @@
     <Compile Include="Assets\Scripts\Perseguidor.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <None Include="Assets\Sprites\Personagem\license.txt" />
-    <None Include="Assets\Fonte\README.txt" />
     <None Include="Assets\Sprites\Cenario\Font.txt" />
     <None Include="Assets\Fonte\Rushink Font Brush DEMO version\Author release_Read me.txt" />
     <None Include="Assets\Sprites\Personagem\Font.txt" />
