@@ -8,6 +8,7 @@ public class MovimentoJogador : MonoBehaviour
     [SerializeField] // para aparecer no inspector do player
     private float velocidade = 4; // defini a velocidade do player 
 
+    private bool temParede;
     private Rigidbody2D rb2D; //criação de variável de manipulação do rigidbody do player
     private bool eLadoDireito; //parametro para identificar o lado q o player está virado para o pivotamento de sprite
     private Animator animator; //criação de variavel de manipulaçao do animator
@@ -25,16 +26,38 @@ public class MovimentoJogador : MonoBehaviour
     }
     void FixedUpdate() //CONTROLES (asdw - esquerda,abaixar,direita,pulo)
     {
-        horizontal = Input.GetAxis("Horizontal");   //coloca na variavel o valor o eixo Horizontal (config A e B na Unity)
-        Movimentar(horizontal);                     //funçao de deslocamento que recebe o valor do eixo X (-1~1)
-        MudarDirecao(horizontal);                   //função de direção que recebe o valor do eixo X (-1~1)
+    
+    if((Input.GetButton("Direita")&& animator.GetBool("abaixando") == false)||
+       (Input.GetButton("Esquerda")&&animator.GetBool("abaixando")==false))
+    {
+        if(Input.GetButton("Direita"))
+            {
+                //if(!temParede)
+                transform.position += new Vector3 (Input.GetAxis("Direita")*velocidade*Time.deltaTime, 0f, 0f);
+                horizontal = 0.5f;
+            }
+        if(Input.GetButton("Esquerda"))
+            {
+                //if(!temParede)
+                transform.position += new Vector3 (Input.GetAxis("Esquerda")*velocidade*Time.deltaTime, 0f, 0f);
+                horizontal = -0.5f;
+            }
+    }
+    else horizontal = 0;    
+            //temParede = Physics2D.Raycast(transform.position,transform.forward, 1f);
+            //Debug.DrawRay(transform.position, transform.forward, Color.blue);
+            
+            //horizontal = Input.GetAxis("Horizontal");   //coloca na variavel o valor o eixo Horizontal (config A e B na Unity)
+            //Movimentar(horizontal);                     //funçao de deslocamento que recebe o valor do eixo X (-1~1)
+            MudarDirecao(horizontal);                   //função de direção que recebe o valor do eixo X (-1~1)
+            Animacao(horizontal);
     }
 
-    private void Movimentar(float h)//MOVIMENTAÇÃO LATERAL DO PLAYER
+    /*private void Movimentar(float h)//MOVIMENTAÇÃO LATERAL DO PLAYER
     {
         rb2D.velocity = new Vector2(h * velocidade, rb2D.velocity.y); //parametro velocidade do rb2D = (eixo X * velocidade, mantem eixo y)     
         Animacao(rb2D.velocity.x);
-    }
+    }*/
 
     private void MudarDirecao(float horizontal) //VIRADA DE SPRITE DO PLAYER
     {
@@ -44,9 +67,9 @@ public class MovimentoJogador : MonoBehaviour
             transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);// --
         }
     }
-    private void Animacao(float h)
+    private void Animacao(float horizontal)
     {
-            animator.SetFloat("velocidade", Mathf.Abs(h));               //Se tiver velocidade abs > 0 anima corrida
+            animator.SetFloat("velocidade", Mathf.Abs(horizontal));               //Se tiver velocidade abs > 0 anima corrida
     }
 
 }
