@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -42,7 +43,6 @@ public class Interface : MonoBehaviour
         movJogador = GameObject.FindObjectOfType<MovimentoJogador>();
         acJogador = GameObject.FindObjectOfType<AcoesJogador>();
         controlePause = GameObject.FindObjectOfType<ControlePause>();
-        
     }
 
     private void Update()
@@ -54,11 +54,28 @@ public class Interface : MonoBehaviour
         textoAmassado[i].gameObject.SetActive(true);
         papelAmassado.gameObject.SetActive(true);
         controlePause.enabled = false;
+        Debug.Log("foi ativado o texto" + i);
     }
 
     public void DesligarImagem()
     {
+        if (textoAmassado[31].IsActive() )//última carta do jogo, quando o jogador sair da tela, deverá indicar o fim dele.
+        {
+            
+            FinalDoJogo();
+            Debug.Log("Entrou aqui com o texto");
+        }
+
+        else
+        {
         StartCoroutine(LigarScriptPause());
+        }
+
+    }
+
+    private void FinalDoJogo()
+    {
+        Debug.Log("O jogo terminou");
     }
 
     private IEnumerator LigarScriptPause()//o objetivo é esse método executar DEPOIS do método de PararOuContinuarJOgo, do script que controla o pause

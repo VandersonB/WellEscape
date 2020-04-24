@@ -10,6 +10,7 @@ TagManager:
   - Camera
   - Carta
   - Limite
+  - Final
   layers:
   - Default
   - TransparentFX
