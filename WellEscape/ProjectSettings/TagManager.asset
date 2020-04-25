@@ -23,7 +23,7 @@ TagManager:
   - Ground
   - Chao
   - Player
-  - 
+  - Background
   - 
   - 
   - 
@@ -47,4 +47,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1978749505
+    locked: 0
+  - name: Platforms
+    uniqueID: 3422674619
+    locked: 0
+  - name: Player
+    uniqueID: 403204621
+    locked: 0
+  - name: Foreground
+    uniqueID: 1672776381
     locked: 0
