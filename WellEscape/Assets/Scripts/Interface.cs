@@ -22,6 +22,10 @@ public class Interface : MonoBehaviour
     private GameObject reiniciar;
     [SerializeField]
     private Checkpoint checkpoint;
+    [SerializeField]
+    private Text textoFim;
+    [SerializeField]
+    private Button reiniciarFim;
 
     private MovimentoJogador movJogador;
     private AcoesJogador acJogador;
@@ -54,16 +58,13 @@ public class Interface : MonoBehaviour
         textoAmassado[i].gameObject.SetActive(true);
         papelAmassado.gameObject.SetActive(true);
         controlePause.enabled = false;
-        Debug.Log("foi ativado o texto" + i);
     }
 
     public void DesligarImagem()
     {
         if (textoAmassado[31].IsActive() )//última carta do jogo, quando o jogador sair da tela, deverá indicar o fim dele.
         {
-            
             FinalDoJogo();
-            Debug.Log("Entrou aqui com o texto");
         }
 
         else
@@ -75,7 +76,56 @@ public class Interface : MonoBehaviour
 
     private void FinalDoJogo()
     {
-        Debug.Log("O jogo terminou");
+        StartCoroutine(EsperarEApagarTexto(2, textoAmassado[31]));//iniciar a rotina que irá desaparecer a tela de crédito
+        textoFim.gameObject.SetActive(true);
+        StartCoroutine(EsperarEApareceFim(2, textoFim));
+    }
+
+    private IEnumerator EsperarEApareceFim(float tempoParaAparecer, Text textoFim)
+    { 
+        Color corTexto = textoFim.color;
+        corTexto.a = 0f;
+        textoFim.color = corTexto;
+        float contador = 0;
+        yield return new WaitForSeconds(2);
+        //a partir desse momento, a ideia é fazer os textos e o painel esvanecescer
+        while (textoFim.color.a <=1)
+        {
+            contador += Time.deltaTime / tempoParaAparecer;
+            corTexto.a = Mathf.Lerp(0, 1, contador);// faz uma interpolação entre o ponto "a" e "b" a partir de um certo coeficiente, dado pelo contador.
+            textoFim.color = corTexto;
+            //uma vez que texto esta transparentes, desliga o GO.
+            if (textoFim.color.a == 1)
+            {
+                acJogador.enabled = false;
+                movJogador.enabled = false;
+                reiniciarFim.gameObject.SetActive(true);
+            }
+            yield return null;
+        }
+    }
+
+    private IEnumerator EsperarEApagarTexto(float tempoParaSumirTexto, Text texto)
+    {
+        //aqui abaixo, a ideia é garantir que o termo alfa da cor (que deixa ela transparente) é regulada de acordo com o seu valor inicial
+        Color corTexto = texto.color;
+        corTexto.a = 1f;
+        texto.color = corTexto;
+        float contador = 0;
+        yield return new WaitForSeconds(2);
+        //a partir desse momento, a ideia é fazer os textos e o painel esvanecescer
+        while (texto.color.a > 0)
+        {
+            contador += Time.deltaTime / tempoParaSumirTexto;
+            corTexto.a = Mathf.Lerp(1, 0, contador);// faz uma interpolação entre o ponto "a" e "b" a partir de um certo coeficiente, dado pelo contador.
+            texto.color = corTexto;
+            //uma vez que texto esta transparentes, desliga o GO.
+            if (texto.color.a <= 0)
+            {
+                texto.gameObject.SetActive(false);
+            }
+            yield return null;
+        }
     }
 
     private IEnumerator LigarScriptPause()//o objetivo é esse método executar DEPOIS do método de PararOuContinuarJOgo, do script que controla o pause
