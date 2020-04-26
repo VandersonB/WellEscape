@@ -21,7 +21,7 @@ public class Interface : MonoBehaviour
     [SerializeField]
     private GameObject reiniciar;
     [SerializeField]
-    private Checkpoint checkpoint;
+    private Checkpoint[] checkpoints;
     [SerializeField]
     private Text textoFim;
     [SerializeField]
@@ -33,8 +33,10 @@ public class Interface : MonoBehaviour
     private ControlePause controlePause;   
     private bool passouPeloCheckpoint;
     private Vector2 novaPosicaoInicial;
+    private bool terminouJogo;
     void Awake()
     {
+        terminouJogo = false;
         foreach (var textos in textoAmassado)
         {
             textos.gameObject.SetActive(false);
@@ -51,7 +53,8 @@ public class Interface : MonoBehaviour
 
     private void Update()
     {
-        passouPeloCheckpoint = checkpoint.PassouPeloCheck();
+        //só preciso verificar o primeiro checkpoint
+        passouPeloCheckpoint = checkpoints[0].PassouPeloCheck();
     }
     public void MostrarCarta(int i)
     {
@@ -65,6 +68,7 @@ public class Interface : MonoBehaviour
         if (textoAmassado[31].IsActive() )//última carta do jogo, quando o jogador sair da tela, deverá indicar o fim dele.
         {
             FinalDoJogo();
+            terminouJogo = true;
         }
 
         else
@@ -95,7 +99,7 @@ public class Interface : MonoBehaviour
             corTexto.a = Mathf.Lerp(0, 1, contador);// faz uma interpolação entre o ponto "a" e "b" a partir de um certo coeficiente, dado pelo contador.
             textoFim.color = corTexto;
             //uma vez que texto esta transparentes, desliga o GO.
-            if (textoFim.color.a == 1)
+            if (textoFim.color.a == 1 && terminouJogo)
             {
                 acJogador.enabled = false;
                 movJogador.enabled = false;
@@ -213,6 +217,37 @@ public class Interface : MonoBehaviour
         Time.timeScale = 0;
         reiniciar.SetActive(true);
         acJogador.enabled = false;
+        movJogador.enabled = false;
+    }
+
+    public void ReiniciarTodoJogo()
+    {
+        StartCoroutine(ReiniciaTudo());    
+    }
+
+    private IEnumerator ReiniciaTudo()
+    {
+
+        yield return new WaitForSecondsRealtime (0.8f);
+        terminouJogo = false;
+        textoFim.gameObject.SetActive(false);
+        papelAmassado.gameObject.SetActive(false);
+        //habilita o texto de titulo
+        titulo.gameObject.SetActive(true);
+        //habilita os botões de inicio
+        foreach (var botao in botoes)
+        {
+            botao.gameObject.SetActive(true);
+        }
+        //garante que todos os checkpoints foram resetados
+        foreach (var checkpoint in checkpoints)
+        {
+            checkpoint.DesabilitaCheck();
+        }
+        //habilita o script de movimentação e desloca o jogador para o início
+        movJogador.GetComponent<MovimentoJogador>().enabled = true;
+        movJogador.GetComponent<Transform>().position = movJogador.posicaoInicial;
+        reiniciarFim.gameObject.SetActive(false);
         movJogador.enabled = false;
     }
 

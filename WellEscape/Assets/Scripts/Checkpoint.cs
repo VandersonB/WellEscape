@@ -29,7 +29,6 @@ public class Checkpoint : MonoBehaviour
         {
             check = true;
             AtualizaCheckpoint();
-            Debug.Log("Passou pelo Checkpoint");
         }
     }
 
@@ -37,12 +36,15 @@ public class Checkpoint : MonoBehaviour
     {
         posicaoCheckpoint = new Vector2(novoLocalInicial.position.x, novoLocalInicial.position.y);
         interfaceJogador.AtualizaPosicao(posicaoCheckpoint);//posicaoCheckpoint;
-        Debug.Log("Mandou nova posição");
     }
     
     public bool PassouPeloCheck()
     {
-        Debug.Log("retornou o check");
         return check;
+    }
+
+    public void DesabilitaCheck()
+    {
+        check = false;
     }
 }
