@@ -69,7 +69,10 @@ public class AcoesJogador : MonoBehaviour
        grounded = Physics2D.OverlapCircle(groundCheck.position, RaioPulo, 1 << LayerMask.NameToLayer("Ground"));     
         if (Input.GetKeyDown(pulo) && grounded)
         {
-            aoPressionarPulo.Invoke();
+            if (!interfaceJogador.GetComponent<ControlePause>().jogoEstaParado)
+            {
+                aoPressionarPulo.Invoke();
+            }
         }
 
         if (Input.GetKeyDown(pegar))

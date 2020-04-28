@@ -34,6 +34,7 @@ public class Interface : MonoBehaviour
     private bool passouPeloCheckpoint;
     private Vector2 novaPosicaoInicial;
     private bool terminouJogo;
+    private GestaoInimigos gestaoInimigosJogo;
     void Awake()
     {
         terminouJogo = false;
@@ -49,6 +50,7 @@ public class Interface : MonoBehaviour
         movJogador = GameObject.FindObjectOfType<MovimentoJogador>();
         acJogador = GameObject.FindObjectOfType<AcoesJogador>();
         controlePause = GameObject.FindObjectOfType<ControlePause>();
+        gestaoInimigosJogo = GameObject.FindObjectOfType<GestaoInimigos>();
     }
 
     private void Update()
@@ -61,6 +63,7 @@ public class Interface : MonoBehaviour
         textoAmassado[i].gameObject.SetActive(true);
         papelAmassado.gameObject.SetActive(true);
         controlePause.enabled = false;
+        Time.timeScale = 0;
     }
 
     public void DesligarImagem()
@@ -73,7 +76,8 @@ public class Interface : MonoBehaviour
 
         else
         {
-        StartCoroutine(LigarScriptPause());
+            Time.timeScale = 1;
+            StartCoroutine(ApagaACarta());
         }
 
     }
@@ -132,9 +136,9 @@ public class Interface : MonoBehaviour
         }
     }
 
-    private IEnumerator LigarScriptPause()//o objetivo é esse método executar DEPOIS do método de PararOuContinuarJOgo, do script que controla o pause
+    private IEnumerator ApagaACarta()//o objetivo é esse método executar DEPOIS do método de PararOuContinuarJOgo, do script que controla o pause
     {
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.2f);
         papelAmassado.gameObject.SetActive(false);//inativa a imagem do papel
         foreach (var textos in textoAmassado)//garante que qualquer texto tenha sido inativado
         {
@@ -206,6 +210,7 @@ public class Interface : MonoBehaviour
         {
             botoes[i].gameObject.SetActive(false);
         }
+        gestaoInimigosJogo.ReposicionarInimigos();
     }
 
     public void AtualizaPosicao(Vector2 posicao)

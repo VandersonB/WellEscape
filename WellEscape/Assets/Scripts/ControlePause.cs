@@ -12,7 +12,7 @@ public class ControlePause : MonoBehaviour
     private Image papelAmassado;
     
 
-    private bool jogoEstaParado;
+    public bool jogoEstaParado {get; private set; }
     private MovimentoJogador movJogador;
     private AcoesJogador acJogador;
 
