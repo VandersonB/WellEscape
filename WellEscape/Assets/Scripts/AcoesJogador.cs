@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;//biblioteca usada para criar UnityEvents
 
+//28/04 - a ideia é repaginar os inputs do jogo. NO caso, como não usamos a ação de abaixar ao longo do jogo, usaremos essa ação para pegar itens
+// o pulo ficará no espaço e o cancelar e pause permanecerá no esc, até teste.
 public class AcoesJogador : MonoBehaviour
 {
     [SerializeField]
@@ -69,16 +71,16 @@ public class AcoesJogador : MonoBehaviour
        grounded = Physics2D.OverlapCircle(groundCheck.position, RaioPulo, 1 << LayerMask.NameToLayer("Ground"));     
         if (Input.GetKeyDown(pulo) && grounded)
         {
-            if (!interfaceJogador.GetComponent<ControlePause>().jogoEstaParado)
+            if (Time.timeScale!=0)
             {
                 aoPressionarPulo.Invoke();
             }
         }
 
-        if (Input.GetKeyDown(pegar))
-        {
-            aoPressionarPegar.Invoke();
-        }
+        //if (Input.GetKeyDown(pegar))
+        //{
+        //aoPressionarPegar.Invoke();
+        //}
 
         if (Input.GetKeyDown(cancelar))
         {

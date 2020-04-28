@@ -256,4 +256,9 @@ public class Interface : MonoBehaviour
         movJogador.enabled = false;
     }
 
+    public void Sair()
+    {
+        Application.Quit();
+        Debug.Log("Saiu do Jogo");
+    }
 }
