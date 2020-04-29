@@ -5,12 +5,11 @@ using UnityEngine;
 
 public class Perseguidor : ControleInimigos //Classe filha da ControleInimigo (herda as variaveis)
 {
-    private AcoesJogador acoesJogador;
-    private bool atingiujogador = false;
-
+    private AudioSource meuAudioSource;
     void Start() //funcão start da filha (sobreescreve a da mae)
     {
         acoesJogador= GameObject.FindObjectOfType<AcoesJogador>();
+        meuAudioSource = this.GetComponent<AudioSource>();
     }
     void Update() //função update da filha (sobreescreve a da mae)
     {
@@ -23,9 +22,7 @@ public class Perseguidor : ControleInimigos //Classe filha da ControleInimigo (h
             (player.position.x < transform.position.x && !sprite.flipX))
             {
                 Flip();
-            }
-        
-        
+            }    
         }
     }
     void FixedUpdate() 
@@ -52,13 +49,15 @@ public class Perseguidor : ControleInimigos //Classe filha da ControleInimigo (h
         {
             animator.SetBool("empurrar", false);
             animator.SetBool("andando", true );
-            animator.SetBool("correndo", false);    
+            animator.SetBool("correndo", false);
+            //meuAudioSource.Play();
         }
         if(Mathf.Abs(distancia) < (distanciaAtaque/2) && Mathf.Abs(distancia) >= (distanciaAtaque/8) && rb2D.velocity.x !=0)
         {
             animator.SetBool("empurrar", false);
             animator.SetBool("andando", false );
-            animator.SetBool("correndo", true);    
+            animator.SetBool("correndo", true);
+            //meuAudioSource.Play();
         }   
     if(Mathf.Abs(distancia) < (distanciaAtaque/8))
         {
@@ -71,10 +70,15 @@ public class Perseguidor : ControleInimigos //Classe filha da ControleInimigo (h
     public void OnCollisionEnter2D(Collision2D collision)
     {
         var obj = collision;
-        if (obj.gameObject.tag == "Player")// se a bala colide com o jogador ele deverá morrer;
+        if (obj.gameObject.tag == "Player")// se o perseguidor encostar, o jogador morre.;
         {
             atingiujogador = true;
             acoesJogador.Morrer(atingiujogador);
         }
-    }    
+    }   
+    
+    private void Gemer()
+    {
+        meuAudioSource.Play();
+    }
 }

@@ -134,3 +134,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AcoesJogador: {fileID: 0}
+  Atirador: {fileID: 0}

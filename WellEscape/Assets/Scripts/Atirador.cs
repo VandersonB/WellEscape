@@ -20,11 +20,13 @@ public class Atirador : ControleInimigos //Classe filha da ControleInimigo (herd
 
     private Vector2 lancamento;
     private AcoesJogador acJogador;
-    public bool flipou;
+    private AudioSource meuAudioSource;
+    private bool flipou;
     private Vector2 posicaoArremesso;
     void Start() //funcão start da filha (sobreescreve a da mae)
     {
         acJogador = GameObject.FindObjectOfType<AcoesJogador>();
+        meuAudioSource = this.GetComponent<AudioSource>();
     }
     void Update() //função update da filha (sobreescreve a da mae)
     {
@@ -78,6 +80,22 @@ public class Atirador : ControleInimigos //Classe filha da ControleInimigo (herd
     {
         var obj = GameObject.Instantiate(pedraPrefab, posicaoArremesso, rotacao); //cria a pedra que esta sendo arremessada;
         obj.GetComponent<Pedra>().AcoesJogador = acJogador; //endereça o script "AcoesJogador" para a pedra para o caso dela acionar o metodo Morrer do jogador, caso ela acerte.
+        obj.GetComponent<Pedra>().Atirador = this;
         obj.GetComponent<Rigidbody2D>().AddForceAtPosition(lancamento, posicaoArremesso, ForceMode2D.Force);
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        var obj = collision;
+        if (obj.gameObject.tag == "Player")// se o atirador encostar, o jogador morre;
+        {
+            atingiujogador = true;
+            acJogador.Morrer(atingiujogador);
+        }
+    }
+
+    public void Tocar()
+    {
+        meuAudioSource.Play();
     }
 }

@@ -72,6 +72,7 @@ public class Interface : MonoBehaviour
         {
             FinalDoJogo();
             terminouJogo = true;
+            Debug.Log("terminou o jogo");
         }
 
         else
@@ -84,6 +85,7 @@ public class Interface : MonoBehaviour
 
     private void FinalDoJogo()
     {
+        Time.timeScale = 1;
         StartCoroutine(EsperarEApagarTexto(2, textoAmassado[31]));//iniciar a rotina que irá desaparecer a tela de crédito
         textoFim.gameObject.SetActive(true);
         StartCoroutine(EsperarEApareceFim(2, textoFim));
@@ -108,6 +110,7 @@ public class Interface : MonoBehaviour
                 acJogador.enabled = false;
                 movJogador.enabled = false;
                 reiniciarFim.gameObject.SetActive(true);
+                Debug.Log("tela de fim e reinicio");
             }
             yield return null;
         }
@@ -131,6 +134,7 @@ public class Interface : MonoBehaviour
             if (texto.color.a <= 0)
             {
                 texto.gameObject.SetActive(false);
+                Debug.Log("apaga o último texto");
             }
             yield return null;
         }

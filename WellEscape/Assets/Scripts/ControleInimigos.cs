@@ -15,6 +15,8 @@ protected Animator animator;
 protected Transform player;
 protected SpriteRenderer sprite;
 protected bool estaMovendo = false;
+protected bool atingiujogador = false;
+protected AcoesJogador acoesJogador;
     void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
