@@ -4,12 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;//biblioteca usada para criar UnityEvents
 
-//28/04 - a ideia é repaginar os inputs do jogo. NO caso, como não usamos a ação de abaixar ao longo do jogo, usaremos essa ação para pegar itens
-// o pulo ficará no espaço e o cancelar e pause permanecerá no esc, até teste.
 public class AcoesJogador : MonoBehaviour
 {
-    [SerializeField]
-    private float forcapulo = 1;  // defini a força do pulo do player
+    [Range(10,22)]
+    public float forcapulo = 19.7f;  // defini a força do pulo do player
     [SerializeField]
     private Transform groundCheck; //definida pela posição do GameObject "GroundCheck" do Player,
     [SerializeField]
@@ -71,16 +69,16 @@ public class AcoesJogador : MonoBehaviour
        grounded = Physics2D.OverlapCircle(groundCheck.position, RaioPulo, 1 << LayerMask.NameToLayer("Ground"));     
         if (Input.GetKeyDown(pulo) && grounded)
         {
-            if (Time.timeScale!=0)
+            if (!interfaceJogador.GetComponent<ControlePause>().jogoEstaParado)
             {
                 aoPressionarPulo.Invoke();
             }
         }
 
-        //if (Input.GetKeyDown(pegar))
-        //{
-        //aoPressionarPegar.Invoke();
-        //}
+        if (Input.GetKeyDown(pegar))
+        {
+            aoPressionarPegar.Invoke();
+        }
 
         if (Input.GetKeyDown(cancelar))
         {
@@ -110,6 +108,7 @@ public class AcoesJogador : MonoBehaviour
         ControleAudio.instancia.PlayOneShot(audioMorte);
         interfaceJogador.Reiniciar();       
         estaMorto = false;
+        
     }
 
     public void Pulo()//PULO DO PLAYER bool j
@@ -158,9 +157,17 @@ public class AcoesJogador : MonoBehaviour
     {
         if (velocidadeQueda > velocidadeMorte && other.gameObject.tag=="Plataforma")
         {            
-            estaMorto = true;
-            Morrer(estaMorto);
+            //Debug.Log("Laco de morte");
+            animator.SetBool("morreu", true);
+            //estaMorto = true;
+            //Morrer(estaMorto);
+            velocidadeQueda = 0.0f;
         }
     }
-
+    private void ChamaMorte()
+    {
+        animator.SetBool("morreu", false);
+        estaMorto = true;
+        Morrer(estaMorto);
+    }
 }
