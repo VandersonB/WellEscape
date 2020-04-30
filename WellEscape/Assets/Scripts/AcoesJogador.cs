@@ -105,7 +105,7 @@ public class AcoesJogador : MonoBehaviour
     public void Morrer(bool morrer)
     {
         //executa animação de morrer, que seria o inverso do acordar
-        ControleAudio.instancia.PlayOneShot(audioMorte);
+        //ControleAudio.instancia.PlayOneShot(audioMorte);
         interfaceJogador.Reiniciar();       
         estaMorto = false;
         
@@ -159,6 +159,7 @@ public class AcoesJogador : MonoBehaviour
         {            
             //Debug.Log("Laco de morte");
             animator.SetBool("morreu", true);
+            ControleAudio.instancia.PlayOneShot(audioMorte);
             //estaMorto = true;
             //Morrer(estaMorto);
             velocidadeQueda = 0.0f;
