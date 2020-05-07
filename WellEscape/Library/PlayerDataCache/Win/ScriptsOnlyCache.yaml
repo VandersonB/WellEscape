@@ -15,6 +15,7 @@ ScriptsOnlyBuild:
     - Perseguidor
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
+    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
@@ -84,45 +85,45 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 574}
+      Script: {instanceID: 576}
     - Class: 114
-      Script: {instanceID: 11160}
+      Script: {instanceID: 11158}
     - Class: 114
-      Script: {instanceID: 11318}
+      Script: {instanceID: 11316}
     - Class: 114
-      Script: {instanceID: 11334}
+      Script: {instanceID: 11332}
     - Class: 114
-      Script: {instanceID: 11366}
+      Script: {instanceID: 11364}
     - Class: 114
-      Script: {instanceID: 11376}
+      Script: {instanceID: 11374}
     - Class: 114
-      Script: {instanceID: 11720}
+      Script: {instanceID: 11718}
     - Class: 114
-      Script: {instanceID: 11792}
+      Script: {instanceID: 11790}
     - Class: 114
-      Script: {instanceID: 11810}
+      Script: {instanceID: 11808}
     - Class: 114
-      Script: {instanceID: 12014}
+      Script: {instanceID: 12012}
     - Class: 114
-      Script: {instanceID: 12206}
+      Script: {instanceID: 12204}
     - Class: 114
-      Script: {instanceID: 12278}
+      Script: {instanceID: 12276}
     - Class: 114
-      Script: {instanceID: 12396}
+      Script: {instanceID: 12394}
     - Class: 114
-      Script: {instanceID: 12410}
+      Script: {instanceID: 12408}
     - Class: 114
-      Script: {instanceID: 12722}
+      Script: {instanceID: 12720}
     - Class: 114
-      Script: {instanceID: 12860}
+      Script: {instanceID: 12858}
     - Class: 114
-      Script: {instanceID: 13040}
+      Script: {instanceID: 13038}
+    - Class: 114
+      Script: {instanceID: 13106}
     - Class: 114
       Script: {instanceID: 13108}
     - Class: 114
-      Script: {instanceID: 13110}
-    - Class: 114
-      Script: {instanceID: 13176}
+      Script: {instanceID: 13174}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -657,4 +658,4 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/Level.unity
-  playerPath: C:/Users/User/Documents/GIT/WellEscape/WellEscape/Build/Obscuro.exe
+  playerPath: D:/Projetos/WellEscape/WellEscape/Build/Obscuro.exe
